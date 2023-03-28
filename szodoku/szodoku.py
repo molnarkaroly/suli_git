@@ -15,7 +15,7 @@ class feladvány:
                 print()
             
 l = []
-with open("feladvanyok.txt", "r",encoding="utf-8") as f:
+with open("/workspaces/suli/szodoku/feladvanyok.txt", "r",encoding="utf-8") as f:
     for sor in f.readlines():
         l.append(feladvány(sor.strip()))
 
