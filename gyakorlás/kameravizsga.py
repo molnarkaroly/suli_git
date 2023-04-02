@@ -7,7 +7,7 @@ class Kamera:
         self.irany = irany
 
 data = []
-with open('gyakorlás\kamera.txt', 'r') as f:
+with open('kamera.txt', 'r') as f:
     for sor in f.read().splitlines()[0:]:
         data.append(Kamera(sor))
 

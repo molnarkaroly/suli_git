@@ -14,13 +14,13 @@ class Szelveny:
         return sor.replace(";"," ")
 
 szelvenyek = []
-with open('/workspaces/suli/gyakorlás/lottoadatok.txt', 'r', encoding='utf-8') as f:
+with open('lottoadatok.txt', 'r', encoding='utf-8') as f:
     for sor in f.read().splitlines()[0:]:
       szelvenyek.append(Szelveny(sor))
 
 for e in szelvenyek:
     if e.elso > e.masodik and e.masodik > e.harmadik and e.harmadik > e.negyedik and e.negyedik > e.otodik:
-#       print(e.elso, e.masodik, e.harmadik, e.negyedik, e.otodik)
+        print(e.elso, e.masodik, e.harmadik, e.negyedik, e.otodik)
         print(e.alap.replace(";"," "))
 
 nyertes = random.choice(szelvenyek)
