@@ -41,6 +41,6 @@ if text =="leállítás":
 if text == "papagáj":
      os.system('cmd/c "curl parrot.live"')
 
-if text not in ["papagáj", "leállítás","igen", "nem"]:
+if text not in ["papagáj", "leállítás","igen", "nem",]:
     print("nem ismerem ezt a parancsot")
 
