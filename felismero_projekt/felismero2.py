@@ -6,6 +6,8 @@ import pycaw
 from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+import webbrowser
+
 
 #hang növelése vagy csökkentése
 def add_system_volume(volume_change):
@@ -51,11 +53,16 @@ while True:
         print("Hiba történt a Google Speech API használatakor; {0}".format(e))
         continue
 
-    if text =="be":
+    if text =="én vagyok groot":
+        break
+
+    if text =="vége":
         break
 
 
 while True:  
+    if text == "vége": 
+        break
     # létrehozunk egy SpeechRecognition objektumot
     r = sr.Recognizer()
     
@@ -99,14 +106,31 @@ while True:
          os.system('cmd/c "curl parrot.live"')
          break
     
-    if text not in ["papagáj", "leállítás","igen", "nem", "vége","zene", "help", "játék", "leír","discord","amőba","Google","tab", "enter","hang fel","hang le","hang érték","hang"]:
+    if text not in ["papagáj", "leállítás","igen", "nem", "vége","zene", "help", "játék", "leír","discord","amőba","Google","tab", "enter","hang fel","hang le","hang érték","hang","keres","keress","időzített leállítás"]:
         print("nem ismerem ezt a parancsot")
     
     if text == "vége":
         break
     
     if text == "zene":
-        os.system('cmd/c "start https://music.youtube.com/watch?v=IC25CJxV3yc&feature=share"')
+        r = sr.Recognizer()
+
+        with sr.Microphone() as source:
+
+            try:
+                text = r.recognize_google(audio, language='hu-HU')
+                print("Milyen dalra van szükséged?")
+                audio = r.listen(source)
+                song = r.recognize_google(audio, language='hu-HU')
+                print("Keresed a következő dalt: " + song)
+                webbrowser.open("https://music.youtube.com/search?q=" + song)
+
+            except sr.UnknownValueError:
+                print("Nem tudtam felismerni a beszédet.")
+            except sr.RequestError as e:
+                print("Hiba történt a Google Speech API használatakor; {0}".format(e))
+
+
 
 
     if text == "help":
@@ -151,7 +175,7 @@ while True:
         else:
             continue
         
-    jatekok =["amőba", ]
+    jatekok =["amőba", "GTA"]
     if text == "játék":
         print("Mit szeretnél játszani?...")
         r = sr.Recognizer()
@@ -173,11 +197,11 @@ while True:
             if text =='amőba':
                 from amöba.twoplayer import *
                 continue
-            if text =='discord':
-                os.system('cmd/c' 'start C:\\Users\\molna\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe')
-                continue
+            if text =='GTA':
+                os.system('cmd/c' 'start com.epicgames.launcher://apps/0584d2013f0149a791e7b9bad0eec102%3A6e563a2c0f5f46e3b4e88b5f4ed50cca%3A9d2d0eb64d5c44529cece33fe2a46482?action=launch&silent=true')
+                break
     
-    programok = ["discord", "Google","YouTube"]
+    programok = ["discord", "Google","YouTube",]
     if text =="program":
         print("Mit szeretnél használni?...")
         r = sr.Recognizer()
@@ -232,9 +256,109 @@ while True:
                     print("Hiba történt a Google Speech API használatakor; {0}".format(e))
                 if isinstance(int(text), (int,float)):
                     set_system_volume(int(text))
-                else:
-                    continue
+                if text == "öt":
+                    set_system_volume(5)
+
+
 
     if text =="hang":
         print_system_volume()
+
+
+    if text =="keres"or text == "keress":
+        r = sr.Recognizer()
+        with sr.Microphone() as source:
+                print("Mit keressek?...")
+                audio = r.listen(source)
+                try:
+                    text = r.recognize_google(audio, language='hu-HU')
+                    print("A felismert szöveg: " + text)
+                
+                    webbrowser.open("https://www.google.com/search?q=" + text)
+                except sr.UnknownValueError:
+                    print("Nem tudtam felismerni a beszédet.")
+                    continue
+                except sr.RequestError as e:
+                    print("Hiba történt a Google Speech API használatakor; {0}".format(e))
+
+
+    if text == "időzített leállítás":
+        print("Szeretnéd a hangalapú verziót használni?...")
+        r = sr.Recognizer()
+        with sr.Microphone() as source:
+                audio = r.listen(source)
+                try:
+                    text = r.recognize_google(audio, language='hu-HU')
+                    print("A felismert szöveg: " + text)
+                except sr.UnknownValueError:
+                    print("Nem tudtam felismerni a beszédet.")
+                    continue
+                except sr.RequestError as e:
+                    print("Hiba történt a Google Speech API használatakor; {0}".format(e))
+        if text == "nem":
+            from shutdown.shutdown import *
+
+            
+        if text =="igen":
+            shutdown_hour = 0
+            shutdown_minute = 0
+            shutdown_second = 0
+            r = sr.Recognizer()
+        with sr.Microphone() as source:
+                print("óra...")
+                audio = r.listen(source)
+                try:
+                    text = r.recognize_google(audio, language='hu-HU')
+                    print("A felismert szöveg: " + text)
+                    if isinstance(int(text), (int,float)):
+                        shutdown_hour=(int(text))
+                    if text == "öt":
+                        shutdown_hour = 5
+                except sr.UnknownValueError:
+                    print("Nem tudtam felismerni a beszédet.")
+                    continue
+                except sr.RequestError as e:
+                    print("Hiba történt a Google Speech API használatakor; {0}".format(e))
+                r = sr.Recognizer()
+        with sr.Microphone() as source:
+                print("Perc...")
+                audio = r.listen(source)
+                try:
+                    text = r.recognize_google(audio, language='hu-HU')
+                    print("A felismert szöveg: " + text)
+                    if isinstance(int(text), (int,float)):
+                        shutdown_minute=(int(text))
+                    if text == "öt":
+                        shutdown_minute = 5
+                except sr.UnknownValueError:
+                    print("Nem tudtam felismerni a beszédet.")
+                    continue
+                except sr.RequestError as e:
+                    print("Hiba történt a Google Speech API használatakor; {0}".format(e))
+
+                r = sr.Recognizer()
+        with sr.Microphone() as source:
+                print("Másodperc...")
+                audio = r.listen(source)
+                try:
+                    text = r.recognize_google(audio, language='hu-HU')
+                    print("A felismert szöveg: " + text)
+                    if isinstance(int(text), (int,float)):
+                        shutdown_second=(int(text))
+                    if text == "öt":
+                        shutdown_second = 5
+                except sr.UnknownValueError:
+                    print("Nem tudtam felismerni a beszédet.")
+                    continue
+                except sr.RequestError as e:
+                    print("Hiba történt a Google Speech API használatakor; {0}".format(e))
+
+                print(f'óra {shutdown_hour} perc {shutdown_minute} másod {shutdown_second}')
+                shut_time = (shutdown_hour*3600)+(shutdown_minute*60)+shutdown_second
+                print(f'shut_time {shut_time}')
+
+ 
+
+                 
+                
 
