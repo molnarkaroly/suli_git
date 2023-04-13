@@ -53,7 +53,7 @@ while True:
         print("Hiba történt a Google Speech API használatakor; {0}".format(e))
         continue
 
-    if text =="én vagyok groot":
+    if text =="be":
         break
 
     if text =="vége":
