@@ -11,3 +11,5 @@ for item in dolgok:
 for k, v in dologdarabok.items():
     if v == min(dologdarabok.values()):
         print(f'legkevesebb a {k}-ból van {v} db')
+
+print(dologdarabok)
