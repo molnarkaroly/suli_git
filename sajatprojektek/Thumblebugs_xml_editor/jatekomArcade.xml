@@ -1,614 +1,614 @@
 <gamestate>
 	<player>
 		<progress>
-			<stage value="0"/>
-			<level value="0"/>
-			<round value="2"/>
+			<stage value="0" />
+			<level value="0" />
+			<round value="2" />
 		</progress>
-		<score value="13283.138671875"/>
-		<roundscore value="0."/>
-		<roundtimebonus value="0."/>
-		<roundcombo value="0"/>
-		<roundgaps value="0"/>
-		<roundmaxchain value="0"/>
-		<roundmaxcombo value="0"/>
-		<roundtime value="0."/>
-		<lastroundsucceeded value="1"/>
-		<totaltime value="115.345"/>
-		<totalcombo value="15"/>
-		<totalgaps value="2"/>
-		<totalmaxchain value="5"/>
-		<totalmaxcombo value="1"/>
-		<nextextralifeat value="50000."/>
-		<nextextralifestep value="50000."/>
-		<name value="jatekom"/>
-		<lives value="95"/>
-		<coins value="1"/>
-		<autoadjust value="1.09"/>
-		<difficulty value="0"/>
-		<queueaverage value="0.46205"/>
-		<rescuetime value="3600."/>
+		<score value="13283.138671875" />
+		<roundscore value="0." />
+		<roundtimebonus value="0." />
+		<roundcombo value="0" />
+		<roundgaps value="0" />
+		<roundmaxchain value="0" />
+		<roundmaxcombo value="0" />
+		<roundtime value="0." />
+		<lastroundsucceeded value="1" />
+		<totaltime value="115.345" />
+		<totalcombo value="15" />
+		<totalgaps value="2" />
+		<totalmaxchain value="5" />
+		<totalmaxcombo value="1" />
+		<nextextralifeat value="50000." />
+		<nextextralifestep value="50000." />
+		<name value="jatekom" />
+		<lives value="4" />
+		<coins value="1" />
+		<autoadjust value="1.09" />
+		<difficulty value="0" />
+		<queueaverage value="0.46205" />
+		<rescuetime value="3600." />
 		<extra>
-			<index value="0"/>
-			<collected value="0"/>
-			<colour value="0"/>
+			<index value="0" />
+			<collected value="0" />
+			<colour value="0" />
 		</extra>
 		<extra>
-			<index value="1"/>
-			<collected value="0"/>
-			<colour value="0"/>
+			<index value="1" />
+			<collected value="0" />
+			<colour value="0" />
 		</extra>
 		<extra>
-			<index value="2"/>
-			<collected value="0"/>
-			<colour value="0"/>
+			<index value="2" />
+			<collected value="0" />
+			<colour value="0" />
 		</extra>
 		<extra>
-			<index value="3"/>
-			<collected value="0"/>
-			<colour value="0"/>
+			<index value="3" />
+			<collected value="0" />
+			<colour value="0" />
 		</extra>
 		<extra>
-			<index value="4"/>
-			<collected value="0"/>
-			<colour value="0"/>
+			<index value="4" />
+			<collected value="0" />
+			<colour value="0" />
 		</extra>
 	</player>
 	<round>
-		<queuenext value="1"/>
-		<timernextqueuetime value="-1."/>
-		<coloursinqueue value="111100"/>
-		<chaincount value="0"/>
-		<timerpowerupspawn value="0."/>
-		<timercoinspawn value="0.444455"/>
-		<timergame value="0.777779"/>
-		<failed value="0"/>
-		<whatnext value="0"/>
-		<mode value="1"/>
-		<targetscorereached value="0"/>
-		<score value="0."/>
-		<fireballcombocount value="0"/>
-		<wowfactor value="0."/>
-		<wowfactordamp value="0."/>
-		<endlesstimedifficultynext value="0."/>
-		<endlesstimedifficultystart value="0."/>
-		<endlessdifficulty value="0"/>
-		<endlesstimeinc value="0."/>
-		<indanger value="0"/>
-		<audioeatingqueue value="0"/>
-		<finalqueue value="0."/>
+		<queuenext value="1" />
+		<timernextqueuetime value="-1." />
+		<coloursinqueue value="111100" />
+		<chaincount value="0" />
+		<timerpowerupspawn value="0." />
+		<timercoinspawn value="0.444455" />
+		<timergame value="0.777779" />
+		<failed value="0" />
+		<whatnext value="0" />
+		<mode value="1" />
+		<targetscorereached value="0" />
+		<score value="0." />
+		<fireballcombocount value="0" />
+		<wowfactor value="0." />
+		<wowfactordamp value="0." />
+		<endlesstimedifficultynext value="0." />
+		<endlesstimedifficultystart value="0." />
+		<endlessdifficulty value="0" />
+		<endlesstimeinc value="0." />
+		<indanger value="0" />
+		<audioeatingqueue value="0" />
+		<finalqueue value="0." />
 		<queue>
-			<index value="0"/>
+			<index value="0" />
 			<queuedata>
-				<count value="47"/>
-				<velocity value="28.6404"/>
-				<colourlast value="0"/>
-				<quick value="0"/>
-				<beingeaten value="0"/>
-				<powerupvelocity value="0."/>
-				<poweruptime value="0."/>
-				<killzonetime value="0."/>
-				<powerupcount value="0"/>
-				<seedcolourindex value="0"/>
-				<combocount value="0"/>
-				<beingeatenmultiplier value="1."/>
-				<chanceofsamecolour value="30.2752"/>
-				<lastshardrewindvelocity value="0."/>
-				<lastshardrewindacceleration value="0."/>
-				<lastshardrewindtime value="0."/>
-				<pusherdeathtime value="0."/>
-				<lastballtime value="0."/>
-				<speedstart value="21.3"/>
-				<speedend value="4.2"/>
-				<finished value="0"/>
+				<count value="47" />
+				<velocity value="28.6404" />
+				<colourlast value="0" />
+				<quick value="0" />
+				<beingeaten value="0" />
+				<powerupvelocity value="0." />
+				<poweruptime value="0." />
+				<killzonetime value="0." />
+				<powerupcount value="0" />
+				<seedcolourindex value="0" />
+				<combocount value="0" />
+				<beingeatenmultiplier value="1." />
+				<chanceofsamecolour value="30.2752" />
+				<lastshardrewindvelocity value="0." />
+				<lastshardrewindacceleration value="0." />
+				<lastshardrewindtime value="0." />
+				<pusherdeathtime value="0." />
+				<lastballtime value="0." />
+				<speedstart value="21.3" />
+				<speedend value="4.2" />
+				<finished value="0" />
 				<animatedball>
-					<mode value="3"/>
-					<colour value="0"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="7.51097"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="0" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="7.51097" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="22.711"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="22.711" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="37.911"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="37.911" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="53.111"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="53.111" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="68.311"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="68.311" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="0"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="83.511"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="0" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="83.511" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="98.711"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="98.711" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="0"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="113.911"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="0" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="113.911" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="2"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="129.111"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="2" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="129.111" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="0"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="144.311"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="0" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="144.311" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="159.511"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="159.511" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="174.711"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="174.711" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="2"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="189.911"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="2" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="189.911" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="2"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="205.111"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="2" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="205.111" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="220.311"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="220.311" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="0"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="235.511"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="0" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="235.511" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="250.711"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="250.711" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="265.911"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="265.911" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="2"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="281.111"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="2" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="281.111" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="296.311"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="296.311" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="2"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="311.511"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="2" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="311.511" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="326.711"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="326.711" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="341.911"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="341.911" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="0"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="357.111"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="0" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="357.111" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="372.311"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="372.311" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="387.511"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="387.511" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="402.711"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="402.711" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="417.911"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="417.911" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="2"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="433.111"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="2" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="433.111" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="2"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="448.311"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="2" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="448.311" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="463.511"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="463.511" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="478.711"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="478.711" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="2"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="493.911"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="2" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="493.911" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="2"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="509.111"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="2" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="509.111" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="524.311"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="524.311" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="539.511"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="539.511" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="0"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="554.711"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="0" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="554.711" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="569.911"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="569.911" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="585.111"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="585.111" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="600.311"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="600.311" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="615.511"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="615.511" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="630.712"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="630.712" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="645.912"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="645.912" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="2"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="661.112"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="2" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="661.112" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="1"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="676.312"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="1" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="676.312" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="2"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="691.512"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="2" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="691.512" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="706.712"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="706.712" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 				<animatedball>
-					<mode value="3"/>
-					<colour value="3"/>
-					<powerup value="-1"/>
-					<powerupduration value="0."/>
-					<time value="721.912"/>
-					<killme value="0"/>
-					<velocity value="28.6404"/>
-					<flying value="0"/>
+					<mode value="3" />
+					<colour value="3" />
+					<powerup value="-1" />
+					<powerupduration value="0." />
+					<time value="721.912" />
+					<killme value="0" />
+					<velocity value="28.6404" />
+					<flying value="0" />
 				</animatedball>
 			</queuedata>
 		</queue>
 	</round>
 	<launcher>
-		<mapnodecurrent value="0"/>
+		<mapnodecurrent value="0" />
 		<launcherball>
-			<index value="0"/>
-			<colour value="0"/>
+			<index value="0" />
+			<colour value="0" />
 		</launcherball>
 		<launcherball>
-			<index value="1"/>
-			<colour value="3"/>
+			<index value="1" />
+			<colour value="3" />
 		</launcherball>
 		<launcherball>
-			<index value="2"/>
-			<colour value="2"/>
+			<index value="2" />
+			<colour value="2" />
 		</launcherball>
-		<currentrotation value="1"/>
-		<wildtime value="-3.55555"/>
-		<lobtime value="0."/>
-		<lobbing value="0"/>
-		<lobfadeinterptime value="0."/>
-		<seedcolourindex value="0"/>
-		<firingenabled value="1"/>
-		<ballslaunched value="1"/>
-		<scale value="0.85"/>
-		<scalemode value="0"/>
-		<scalemaster value="0.85"/>
-		<aim value="0"/>
+		<currentrotation value="1" />
+		<wildtime value="-3.55555" />
+		<lobtime value="0." />
+		<lobbing value="0" />
+		<lobfadeinterptime value="0." />
+		<seedcolourindex value="0" />
+		<firingenabled value="1" />
+		<ballslaunched value="1" />
+		<scale value="0.85" />
+		<scalemode value="0" />
+		<scalemaster value="0.85" />
+		<aim value="0" />
 	</launcher>
 </gamestate>
