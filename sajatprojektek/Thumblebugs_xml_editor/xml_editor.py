@@ -10,3 +10,13 @@ def change_lives_value(benum, karnev):
     lives = player.find('lives')
     lives.set('value', str(benum))
     tree.write(file_path)
+
+def print_lives_value(karnev):
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(current_dir, f'{karnev}Arcade.xml')
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+    player = root.find('player')
+    lives = player.find('lives')
+    return lives.get('value')
+

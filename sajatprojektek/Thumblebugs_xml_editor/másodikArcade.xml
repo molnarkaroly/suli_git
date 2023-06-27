@@ -22,7 +22,7 @@
 		<nextextralifeat value="50000." />
 		<nextextralifestep value="50000." />
 		<name value="masodik" />
-		<lives value="50" />
+		<lives value="99" />
 		<coins value="0" />
 		<autoadjust value="1." />
 		<difficulty value="0" />

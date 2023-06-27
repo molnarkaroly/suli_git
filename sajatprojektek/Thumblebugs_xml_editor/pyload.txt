@@ -1,4 +1,0 @@
-pip install toga
-pip install tkinter
-pip install toga-demo
-pip install beeware
