@@ -98,7 +98,7 @@ class ExampleApp(toga.App):
             root = tk.Tk()
             root.withdraw()
 
-            result = messagebox.askyesno("Törlés", f'Biztosan törölni szeretnéd a {self.text_input.value} fájlt?')
+            result = messagebox.askyesno("Törlés", f'Biztosan törölni szeretnéd a "{self.text_input.value}" játékos fiókot?')
             if result:
                 os.remove(file_path)
                 tk.Tk().withdraw()
