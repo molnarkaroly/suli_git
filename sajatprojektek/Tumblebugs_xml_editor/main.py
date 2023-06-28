@@ -114,7 +114,7 @@ class ExampleApp(toga.App):
 
 
 def main():
-    return ExampleApp('Thumblebugs_2_xml_editor', 'org.beeware.example')
+    return ExampleApp('Tumblebugs_2_xml_editor', 'org.beeware.example')
 
 
 if __name__ == '__main__':
