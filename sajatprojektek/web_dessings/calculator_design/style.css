@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap");
+
+:root {
+  --cor-background: #2c043f;
+  --cor-branco: #ffffff;
+  --cor-sombra-padrao: rgba(255, 0, 191, 0.671);
+  --cor-botao-normal: #ffffff;
+  --cor-botao-normal-hover: #ff82ff;
+  --cor-botao-topo-cinza-escuro: #ff00ea;
+  --cor-botao-topo-cinza-escuro-hover: #ffffff;
+  --cor-botao-laranja:rgb(255, 255, 255);
+  --cor-botao-laranja-hover: rgb(255, 255, 255);
+  --cor-input-resultado: #9727ff1a;
+  --cor-botao-fechar: #ff0000;
+  --cor-botao-minimizar: #d7fd2e;
+  --cor-botao-maximizar: #059e00;
+  --cor-borda-botoes: rgba(0, 0, 0, 0.644);
+  --cor-borda-calculadora: rgba(255, 255, 255, 0.575);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  letter-spacing: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  margin: 0;
+  background: var(--cor-background);
+  outline: none;
+}
+
+.conteudo {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo .calculadora {
+  border: 1px solid var(--cor-borda-calculadora);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px var(--cor-sombra-padrao);
+}
+
+.conteudo .calculadora .opcoes__janela {
+  display: flex;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background-color: transparent;
+  column-gap: 7px;
+}
+
+.conteudo .calculadora .opcoes__janela div {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(17, 0, 255);
+  border-radius: 50%;
+  position: relative;
+}
+
+.conteudo .calculadora .opcoes__janela div::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 11px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.conteudo .calculadora .opcoes__janela div:nth-child(1) {
+  background-color: var(--cor-botao-fechar);
+}
+
+.conteudo .calculadora .opcoes__janela div:nth-child(2) {
+  background-color: var(--cor-botao-minimizar);
+}
+
+.conteudo .calculadora .opcoes__janela div:nth-child(3) {
+  background-color: var(--cor-botao-maximizar);
+}
+
+.conteudo .calculadora .opcoes__janela div:nth-child(1):hover:after {
+  content: "x";
+}
+
+.conteudo .calculadora .opcoes__janela div:nth-child(2):hover:after {
+  content: "-";
+  line-height: 12px;
+  font-size: 12px;
+}
+
+.conteudo .calculadora .opcoes__janela div:nth-child(3):hover:after {
+  content: "+";
+}
+
+.conteudo .calculadora .conteudo__botoes {
+  display: grid;
+  background-color: var(--cor-input-resultado);
+  border-radius: 10px;
+}
+
+.conteudo .calculadora .conteudo__botoes input {
+  grid-column: span 4;
+  height: 70px;
+  width: 260px;
+  background-color: var(--cor-input-resultado);
+  border: none;
+  border-radius: 10px;
+  color: var(--cor-branco);
+  font-size: 50px;
+  text-align: right;
+  margin: auto;
+  margin-top: 20px;
+  font-weight: 200;
+  background-color: #ffffff07;
+  color: rgba(255, 255, 255, 0.644);
+  font-weight: bolder;
+
+
+}
+
+.conteudo .calculadora .conteudo__botoes input::placeholder {
+  color: var(--cor-branco);
+  opacity: 1; /* para firefox */
+  color: rgba(255, 255, 255, 0.644);
+  font-weight: bolder;
+}
+
+.conteudo .calculadora .conteudo__botoes a {
+  height: 70px;
+  margin: 15px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: none;
+ 
+  background: rgb(0,228,255);
+  background: -moz-linear-gradient(130deg, rgba(0,228,255,0.87718837535014) 0%, rgba(255,0,219,0.7175245098039216) 100%);
+  background: -webkit-linear-gradient(130deg, rgba(0,228,255,0.87718837535014) 0%, rgba(255,0,219,0.7175245098039216) 100%);
+  background: linear-gradient(130deg, rgba(0,228,255,0.87718837535014) 0%, rgba(255,0,219,0.7175245098039216) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00e4ff",endColorstr="#ff00db",GradientType=1);
+  
+  cursor: pointer;
+  border-right: 1px solid var(--cor-borda-botoes);
+  border-top: 1px solid var(--cor-borda-botoes);
+  user-select: none;
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px 0px rgba(255, 188, 244, 0.158);
+
+}
+
+.conteudo .calculadora .conteudo__botoes a:hover {
+  background-color: var(--cor-botao-normal-hover);
+}
+
+.conteudo .calculadora .conteudo__botoes a.grid-span-2 {
+  grid-column: span 2;
+  width: 83%;
+  border-radius: 50%;
+  
+}
+
+.conteudo .calculadora .conteudo__botoes a.botoes__iniciais {
+  background-color: var(--cor-botao-topo-cinza-escuro);
+  box-shadow: 5px 5px 10px 0px rgba(255, 188, 244, 0.39);
+}
+
+.conteudo .calculadora .conteudo__botoes a.botoes__iniciais:hover {
+  background-color: var(--cor-botao-topo-cinza-escuro-hover);
+}
+
+.conteudo .calculadora .conteudo__botoes a:nth-child(4n + 1),
+.conteudo .calculadora .conteudo__botoes a:last-child {
+    background: rgb(164,31,251);
+    background: -moz-linear-gradient(156deg, rgba(164,31,251,1) 23%, rgba(255, 179, 72, 0.801) 100%);
+    background: -webkit-linear-gradient(156deg, rgba(164,31,251,1) 23%, rgba(255, 179, 72, 0.76) 100%);
+    background: linear-gradient(156deg, rgba(164,31,251,1) 23%, rgba(255, 179, 72, 0.726) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a41ffb",endColorstr="#ffb348",GradientType=1);  
+
+    border-right: none;
+    border-radius: 100%;
+    
+}
+
+.conteudo .calculadora .conteudo__botoes a:nth-child(4n + 1):hover,
+.conteudo .calculadora .conteudo__botoes a:last-child:hover {
+    background-color: var(--cor-botao-normal-hover);
+    border-radius: 100%;
+
+}
+
+.borda-radius-esquerda {
+  border-bottom-left-radius: 10px;
+}
+
+.borda-radius-direita {
+  border-bottom-right-radius: 10px;
+}
+
+.conteudo .calculadora {
+    background: linear-gradient(130deg, rgba(0,0,0,0.10968137254901966) 0%, rgba(0,0,0,0.22452731092436973) 31%, rgba(255, 255, 255, 0.055) 38%, rgba(0,0,0,0.16850490196078427) 42%, rgba(255,255,255,0.04805672268907568) 49%, rgba(0,0,0,0.24693627450980393) 53%, rgba(0,0,0,0.23012955182072825) 58%, rgba(0,0,0,0.18531162464985995) 100%);
+    animation: glowing 20s  infinite;
+    border-radius:10px;
+    position: absolute;
+    background-size: 400%;
+    backdrop-filter: blur(50px);
+
+}
+
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 500% 0;
+  }
+  200% {
+    background-position: 0 0;
+  }
+}
+
