@@ -1,0 +1,2 @@
+STOP - gomb
+.bat - futtató / pakoló
