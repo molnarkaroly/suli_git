@@ -1,0 +1,10 @@
+C:\Users\molnarkaroly\Downloads\molnarkaroly_12_12\66\bin\Debug\66.exe.config
+C:\Users\molnarkaroly\Downloads\molnarkaroly_12_12\66\bin\Debug\66.exe
+C:\Users\molnarkaroly\Downloads\molnarkaroly_12_12\66\bin\Debug\66.pdb
+C:\Users\molnarkaroly\Downloads\molnarkaroly_12_12\66\obj\Debug\66.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_12_12\66\obj\Debug\_66.Form1.resources
+C:\Users\molnarkaroly\Downloads\molnarkaroly_12_12\66\obj\Debug\_66.Properties.Resources.resources
+C:\Users\molnarkaroly\Downloads\molnarkaroly_12_12\66\obj\Debug\66.csproj.GenerateResource.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_12_12\66\obj\Debug\66.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_12_12\66\obj\Debug\66.exe
+C:\Users\molnarkaroly\Downloads\molnarkaroly_12_12\66\obj\Debug\66.pdb

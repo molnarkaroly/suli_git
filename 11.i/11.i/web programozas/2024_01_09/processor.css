@@ -1,0 +1,35 @@
+.content-navigation {
+  border-color: rgba(0, 63, 139, 0.1882352941);
+  color: rgba(0, 63, 139, 0.1882352941);
+}
+
+.bordered {
+  padding: 8;
+  margin: 8px;
+  border-color: rgba(0, 63, 139, 0.1882352941);
+}
+
+table.h1 {
+  margin: 2em 0;
+}
+table.h1 td {
+  text-align: right;
+}
+
+li {
+  font-font-family: serif;
+  font-font-weight: bold;
+  font-font-size: 1.2em;
+}
+
+h1 {
+  font-size: 120px;
+  color: rgba(253, 255, 122, 0.9921568627);
+  text-shadow: 0 2px 0 rgba(252, 255, 46, 0.9921568627), 0 4px 0 rgba(252, 255, 40, 0.9921568627), 0 6px 0 rgba(252, 255, 30, 0.9921568627), 0 8px 0 rgba(251, 255, 20, 0.9921568627), 3px 8px 15px rgba(0, 0, 0, 0.1), 3px 8px 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 90px;
+  color: rgba(253, 255, 122, 0.9921568627);
+  text-shadow: 0 2px 0 rgba(252, 255, 46, 0.9921568627), 0 4px 0 rgba(252, 255, 40, 0.9921568627), 0 6px 0 rgba(252, 255, 30, 0.9921568627), 0 8px 0 rgba(251, 255, 20, 0.9921568627), 3px 8px 15px rgba(0, 0, 0, 0.1), 3px 8px 5px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=processor.css.map */

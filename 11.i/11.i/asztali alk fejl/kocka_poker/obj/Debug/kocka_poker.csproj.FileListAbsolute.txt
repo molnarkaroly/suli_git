@@ -1,0 +1,7 @@
+C:\Users\molnarkaroly\Downloads\kocka_poker\bin\Debug\kocka_poker.exe.config
+C:\Users\molnarkaroly\Downloads\kocka_poker\bin\Debug\kocka_poker.exe
+C:\Users\molnarkaroly\Downloads\kocka_poker\bin\Debug\kocka_poker.pdb
+C:\Users\molnarkaroly\Downloads\kocka_poker\obj\Debug\kocka_poker.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\kocka_poker\obj\Debug\kocka_poker.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\kocka_poker\obj\Debug\kocka_poker.exe
+C:\Users\molnarkaroly\Downloads\kocka_poker\obj\Debug\kocka_poker.pdb

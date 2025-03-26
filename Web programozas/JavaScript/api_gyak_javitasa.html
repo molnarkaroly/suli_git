@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body onload="LoadDoc()">
+<!--https://nameday.abalin.net/docs/-->
+    <button type="button" onclick="NameDay()">Adat kérése</button>
+    <input type="date" name="date" id="date">
+    <select name="orszagok" id="orszagok"></select>
+
+    <p id="nameday"></p>
+
+    <script>
+        function LoadDoc() {
+        let xhttp = new XMLHttpRequest();
+        
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                const obj = JSON.parse(this.responseText);
+                const select = document.getElementById("orszagok");
+                for (let orszagok in obj.nameday) {
+                    const option = document.createElement("option");
+                    option.value = orszagok;
+                    option.text = orszagok;
+                    select.appendChild(option);
+                }   
+            }
+        };
+        xhttp.open("POST", "https://nameday.abalin.net/api/V1/today", true);
+        xhttp.setRequestHeader("content-type", "application/json");
+        xhttp.setRequestHeader("Accept", "application/json");
+        xhttp.send();
+        }
+
+        function NameDay() {
+            let xhttp = new XMLHttpRequest();
+            const country = document.getElementById("orszagok").value;
+            const date = document.getElementById("date").value.split('-');
+            const day = date[2];
+            const month = date[1];
+
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    const obj = JSON.parse(this.responseText);
+                    document.getElementById("nameday").innerHTML = obj.nameday[country];
+                }
+            };
+            xhttp.open("POST", "https://nameday.abalin.net/api/V1/getdate", true);
+            xhttp.setRequestHeader("content-type", "application/json");
+            xhttp.setRequestHeader("Accept", "application/json");
+            xhttp.send(JSON.stringify({'day': day, 'month': month, 'country': country}));
+        }
+        
+    </script>
+</body>
+</html>

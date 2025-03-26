@@ -1,0 +1,7 @@
+C:\Users\molnarkaroly\Downloads\kockajatek\bin\Debug\kockajatek.exe.config
+C:\Users\molnarkaroly\Downloads\kockajatek\bin\Debug\kockajatek.exe
+C:\Users\molnarkaroly\Downloads\kockajatek\bin\Debug\kockajatek.pdb
+C:\Users\molnarkaroly\Downloads\kockajatek\obj\Debug\kockajatek.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\kockajatek\obj\Debug\kockajatek.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\kockajatek\obj\Debug\kockajatek.exe
+C:\Users\molnarkaroly\Downloads\kockajatek\obj\Debug\kockajatek.pdb

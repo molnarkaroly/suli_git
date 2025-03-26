@@ -1,0 +1,10 @@
+C:\Users\molnarkaroly\Downloads\240912_molnarkaroly\callcurator_2024\bin\Debug\callcurator_2024.exe.config
+C:\Users\molnarkaroly\Downloads\240912_molnarkaroly\callcurator_2024\bin\Debug\callcurator_2024.exe
+C:\Users\molnarkaroly\Downloads\240912_molnarkaroly\callcurator_2024\bin\Debug\callcurator_2024.pdb
+C:\Users\molnarkaroly\Downloads\240912_molnarkaroly\callcurator_2024\obj\Debug\callcurator_2024.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\240912_molnarkaroly\callcurator_2024\obj\Debug\callcurator_2024.Properties.Resources.resources
+C:\Users\molnarkaroly\Downloads\240912_molnarkaroly\callcurator_2024\obj\Debug\callcurator_2024.csproj.GenerateResource.cache
+C:\Users\molnarkaroly\Downloads\240912_molnarkaroly\callcurator_2024\obj\Debug\callcurator_2024.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\240912_molnarkaroly\callcurator_2024\obj\Debug\callcurator_2024.exe
+C:\Users\molnarkaroly\Downloads\240912_molnarkaroly\callcurator_2024\obj\Debug\callcurator_2024.pdb
+C:\Users\molnarkaroly\Downloads\240912_molnarkaroly\callcurator_2024\obj\Debug\callcurator_2024.calculator24.resources

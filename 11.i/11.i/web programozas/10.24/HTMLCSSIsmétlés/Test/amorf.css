@@ -1,0 +1,33 @@
+#amorf{
+    width: 300px;
+    background-color: yellow;
+    color: red;
+    padding: 30px 0 30px 100px ;
+    border-radius: 2em 14em 4em 8em /3em 12em 6em 10em;
+    transition-property: width, background-color, color, padding, border-radius margin;
+    transition-duration: 4s, 10s, 5s, 8s, 3s, 6s;
+    transition-delay: 5s, 4s, 8s, 10s, 7s, 4s, 5s;
+    transition-timing-function: cubic-bezier(0.2,0.6,0.4,0.8),linear,ease, cubic-bezier(1.0,0.0,0.0,1.0), linear, ease-in-out;
+    
+}
+
+#amorf:hover{
+    width: 200px;
+    background-color: red;
+    color: rgb(0, 255, 0);
+    padding: 10px 50px 40px 60px;
+    border-radius: 3em 12em 8em 12em /5em 10em 8em 12em;
+    margin: 200px;
+}
+
+#kepek img{
+    width: 320px;
+    height: 180px;
+    position: absolute;
+    transition: opacity 2s steps(3 end);
+}
+
+#ketto:active{
+    opacity: 0;
+}
+

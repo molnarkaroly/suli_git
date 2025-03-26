@@ -1,0 +1,112 @@
+body{
+   background-image: url("backgroung.jpg");
+   background-attachment: scroll;
+   background-repeat: initial;
+   }
+
+.doboz{
+  margin:auto; 
+  border:auto solid rgba(255, 255, 255, 0) ;
+  padding: auto;
+}
+   
+   .slogo{
+      text-align: center;
+   }
+
+   .logo{
+       width: 450px;
+   }
+   
+   .navlink, .nav-brand{
+      color: rgb(0, 0, 0); 
+   }
+   
+   .navbar {
+      background-color: rgba(128, 94, 0, 0.267);
+      font-size: 25px;
+      text-align: center;
+      border: 5px solid rgba(0, 0, 0, 0.411);
+      font-style: oblique;
+      
+  }
+
+  .nav-link{
+     color: black;
+  }
+  
+  #color{
+     color: rgb(109, 53, 19);
+  }
+
+  .nav-item{
+     font-size: 35px;
+     color: brown;
+  }
+
+  .fcolor{
+     color:rgb(179, 92, 71);
+  }
+
+  
+
+.kep1{
+  height: 250px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.idezojel{
+  width: 90px;
+  padding: left;
+}
+
+.kezdőszöveg{
+  font-size: 65px;
+}
+
+.idezet{
+  height: 250px;
+  width: 1800px ;
+  position: static;
+}
+
+.kitöltött1{
+  background-color: rgba(165, 42, 42, 0.247);
+  border-radius:20px;	
+
+
+}
+
+.kep2{
+  width: 0;
+}
+
+
+.center{
+   text-align: center;
+}
+
+#rendeles{
+   font-size: 35px;
+   font-style: oblique;
+   margin-left: 25px;
+}
+
+#szemelyesrendeles{
+   font-size: 25px;
+   font-style:unset;
+   margin-left: 15px;
+}
+
+#keprendeles{
+   font-size: 25px;
+   font-style:unset;
+   margin-left: 15px;
+}
+
+
+.td{
+   border: solid rgba(255, 0, 0, 0) 15px;
+}
+

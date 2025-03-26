@@ -1,0 +1,25 @@
+body{
+    background-color: #FFE4B5;
+}
+
+h1{
+    text-align: center ;
+}
+
+.kozep{
+    text-align: center;
+    border: 1px;
+    margin: 0 auto;
+}
+
+
+table{ width: 700px;
+    margin: 0 auto;
+    border-collapse:collapse;
+    }
+
+.balra{
+    text-align: left;
+}
+
+

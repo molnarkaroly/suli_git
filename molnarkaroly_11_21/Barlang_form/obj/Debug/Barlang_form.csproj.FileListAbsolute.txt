@@ -1,0 +1,10 @@
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_21\Barlang_form\bin\Debug\Barlang_form.exe.config
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_21\Barlang_form\bin\Debug\Barlang_form.exe
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_21\Barlang_form\bin\Debug\Barlang_form.pdb
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_21\Barlang_form\obj\Debug\Barlang_form.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_21\Barlang_form\obj\Debug\Barlang_form.Form1.resources
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_21\Barlang_form\obj\Debug\Barlang_form.Properties.Resources.resources
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_21\Barlang_form\obj\Debug\Barlang_form.csproj.GenerateResource.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_21\Barlang_form\obj\Debug\Barlang_form.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_21\Barlang_form\obj\Debug\Barlang_form.exe
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_21\Barlang_form\obj\Debug\Barlang_form.pdb

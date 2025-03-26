@@ -1,0 +1,8 @@
+C:\Users\molnarkaroly\Downloads\20231003_molnarkaroly\ciklusokesfajlok\obj\Debug\ciklusokesfajlok.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\20231003_molnarkaroly\ciklusokesfajlok\obj\Debug\ciklusokesfajlok.csproj.SuggestedBindingRedirects.cache
+C:\Users\molnarkaroly\Downloads\20231003_molnarkaroly\ciklusokesfajlok\obj\Debug\ciklusokesfajlok.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\20231003_molnarkaroly\ciklusokesfajlok\bin\Debug\ciklusokesfajlok.exe.config
+C:\Users\molnarkaroly\Downloads\20231003_molnarkaroly\ciklusokesfajlok\bin\Debug\ciklusokesfajlok.exe
+C:\Users\molnarkaroly\Downloads\20231003_molnarkaroly\ciklusokesfajlok\bin\Debug\ciklusokesfajlok.pdb
+C:\Users\molnarkaroly\Downloads\20231003_molnarkaroly\ciklusokesfajlok\obj\Debug\ciklusokesfajlok.exe
+C:\Users\molnarkaroly\Downloads\20231003_molnarkaroly\ciklusokesfajlok\obj\Debug\ciklusokesfajlok.pdb

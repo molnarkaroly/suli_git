@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Macska{
+            constructor(nev, suly, ehes){
+                this.nev  = nev;
+                this.suly = suly;
+                this.ehes = ehes;
+            }
+            eszik(etel){
+                if(this.ehes == true)
+                {
+                    this.suly += etel;
+                    this.ehes = false;
+                    return true;
+                }
+                else
+                {  
+                    return false;
+                }
+            }
+
+            futkos(){
+                this.suly -= 0.1;
+                this.ehes = true;
+            }
+
+            kiir(){
+                if(this.ehes == true){
+                    console.log(`Név: ${this.nev} - Suly: ${this.suly} - éhes`);
+                }
+                else if(this.ehes == false){
+                    console.log(`Név: ${this.nev} - Suly: ${this.suly} - nem éhes`);
+                }
+            }
+        }
+
+macska1 = new Macska("Cirmi", 5, true);
+macska2 = new Macska("Kormi", 4, false);
+
+//macska1
+macska1.kiir();
+if(macska1.eszik(0.5) == true){
+    console.log("Az etetés sikeres volt !");
+}
+else{
+    console.log("Az etetés nem volt sikeres!");
+}
+macska1.kiir();
+macska1.futkos();
+macska1.kiir();
+
+
+
+console.log("\n");
+
+//macska2
+macska2.kiir();
+if(macska2.eszik(0.5) == true){
+    console.log("Az etetés sikeres volt !");
+}
+else{
+    console.log("Az etetés nem volt sikeres!");
+}
+macska2.kiir();
+macska2.futkos();
+macska2.kiir();
+
+    </script>
+</body>
+</html>

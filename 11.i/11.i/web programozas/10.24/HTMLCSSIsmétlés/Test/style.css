@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Mooli&display=swap');
+
+body{
+    font-family: 'Comfortaa';
+    background-color: #1c1c1c;
+    color: white;
+}
+
+td, th{
+    border: 1px solid black
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+}
+
+img{
+    width: 300px;
+    
+}
+
+pre{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+meter{
+    color: orange;
+    width: 80%;
+    height: 300px;
+    background-color: orange;
+}
+
+.green{
+    background-color: aquamarine;
+}
+
+
+
+#content{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #252525;
+    background-image: url(flower-8200543_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1%;
+    box-shadow: 0px 0px 50px orange;
+}
+.news{
+    background-color: #1c1c1c;
+    width: 436px;
+    text-align: justify;
+    float: left;
+    margin: 10px;
+    border: 2px solid white;
+    padding: 20px;
+}
+.enter{
+    clear: both;
+}
+.news2{
+    background-color: #1c1c1c;
+    width: 269px;
+    text-align: justify;
+    float: left;
+    margin: 10px;
+    border: 2px solid white;
+    padding: 20px;
+
+}
+.jobbra{
+    width: 150px;
+    float: right;
+    margin: 10px;
+}
+
+
+
+.angolTabla{
+    margin: 0 auto;
+}
+.angolTabla th{
+    border-color: white;
+    height: 50px;
+    width: 10px;
+}
+.angolTabla td{
+    border-color: white;
+    height: 50px;
+    width: 10px;
+}
+
+
+
+#csordul{
+    width: 400px;
+    height: 240px;
+    border: 1px solid red;
+    overflow: auto;
+}
+#csordul p{
+    width: 600px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#csordul:hover{
+    cursor: help;
+}

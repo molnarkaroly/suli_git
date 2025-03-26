@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+header{
+    background-color: rgb(2, 81, 228);
+    color: beige;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 30px;
+}
+
+header h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 20px;
+    border-top:2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+
+th{
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+th:first-child, td:first-child{
+    text-align: left;
+
+}
+
+button{
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.card{
+    background-color: white;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    padding: 10px 20px;
+
+}
+
+
+.form-input{
+    margin-right: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 18px;
+    outline: none;
+
+}
+
+
+.form-input:focus{
+    border: 1px solid lightblue;
+
+}
+
+.add-btn{
+    background-color: blue;
+    color: #eee;
+
+}
+
+
+.delete-btn{
+    background-color: red;
+    color: white;
+
+}
+
+
+.text-center{
+
+        text-align: center;
+}
+
+#deleteAllTask{
+    display: block;
+    padding: 30px;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 20px;
+}
+
+
+
+

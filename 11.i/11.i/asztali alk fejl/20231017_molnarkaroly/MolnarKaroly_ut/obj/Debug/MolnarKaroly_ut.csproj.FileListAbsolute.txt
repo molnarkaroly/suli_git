@@ -1,0 +1,8 @@
+C:\Users\molnarkaroly\Downloads\20231017_molnarkaroly\MolnarKaroly_ut\bin\Debug\MolnarKaroly_ut.exe.config
+C:\Users\molnarkaroly\Downloads\20231017_molnarkaroly\MolnarKaroly_ut\bin\Debug\MolnarKaroly_ut.exe
+C:\Users\molnarkaroly\Downloads\20231017_molnarkaroly\MolnarKaroly_ut\bin\Debug\MolnarKaroly_ut.pdb
+C:\Users\molnarkaroly\Downloads\20231017_molnarkaroly\MolnarKaroly_ut\obj\Debug\MolnarKaroly_ut.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\20231017_molnarkaroly\MolnarKaroly_ut\obj\Debug\MolnarKaroly_ut.csproj.SuggestedBindingRedirects.cache
+C:\Users\molnarkaroly\Downloads\20231017_molnarkaroly\MolnarKaroly_ut\obj\Debug\MolnarKaroly_ut.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\20231017_molnarkaroly\MolnarKaroly_ut\obj\Debug\MolnarKaroly_ut.exe
+C:\Users\molnarkaroly\Downloads\20231017_molnarkaroly\MolnarKaroly_ut\obj\Debug\MolnarKaroly_ut.pdb

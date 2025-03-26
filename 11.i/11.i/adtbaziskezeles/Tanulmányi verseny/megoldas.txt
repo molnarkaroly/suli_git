@@ -1,0 +1,19 @@
+2.feladat
+ALTER TABLE `tanverseny` ADD `AZON` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`AZON`);
+
+3.feladat
+SELECT `datum`, `versenynev`,`tipus` FROM `tanverseny` WHERE esemeny = "nevezés" ORDER BY datum ASC;
+
+
+4.feladat
+SELECT tipus, count(*) FROM `tanverseny` GROUP BY tipus;
+
+5.feladat
+SELECT `datum`, `versenynev`,`tipus` FROM `tanverseny` WHERE esemeny != "nevezés" AND `datum` LIKE "2005-02-%" ORDER BY datum ASC;
+
+
+6.feladat
+UPDATE tanverseny SET datum= "2005-10-07" WHERE datum = "2004-10-01";
+
+7.feladat
+SELECT shrek FROM `tanverseny` GROUP BY `tipus`, `versenynev` ORDER BY datum ASC;

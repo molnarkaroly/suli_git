@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx</title>
+</head>
+<style>
+    body{
+        background-color: rgb(41, 41, 41);
+    }
+</style>
+<body>
+    <script>
+/*
+       let reg = /^.+@.+\..{2,6}$/;
+       console.log(reg.test("name@mail.com")); // true mert van benne @ és . 
+       console.log(reg.test("name?mail.com")); // false mert nem emailcím 
+
+       let reg2 = /a(b+)a/g; //g = globális keresés 
+       console.log(reg2.exec("cabbabasbz")); //olyan karakter láncot ad viszsa amely a val kezdődik és a va végződik és közte 1 vagy több b van
+*/
+/*
+let str="88sd4333 p23ko ";
+console.log(str.match(/\d+\s/g));
+*/
+/*
+let str="hehe hee hee";
+console.log(str.replace(/e+/g, "a"));
+*///megkeresi és kicseréli azokat az egy vagy tobb e betűket a-ra 
+    
+    /*
+str = "aabbabsbz";
+console.log(str.search(/^a(b+)a/g))
+  */
+
+/*
+let str = "alma körte;barack";
+console.log(str.split(/\s|;/));
+    */
+/*
+    let reg= /(\w+)\s(\w+)/;
+    let str ="Kiss Zsuzsa";
+    let newStr = str.replace(reg, "$2 $1");
+    console.log(newStr);
+    */
+/*
+    let reg =    /([0-9]{4})[^0-9]*([0-9]{2})[^0-9]*([0-9]{2})/;
+    let datum = "2006. 07. 04";
+    console.log(reg.exec(datum));
+*///datum szétbontás
+
+/*
+
+function szamlaSzam(){
+    let reg = /^[0-9]{8}([ -]?[0-9]{8}){1,2}$/;
+    let s = document.getElementById('szamlaszam').value;
+    alert(reg.test(s));
+}
+*///bankszámlaszám ellenőrzés
+
+
+
+
+    </script>
+
+<!--
+<input type="text" id="szamlaszam">
+<input type="button" value="Számlaszám?" onclick="szamlaSzam()">
+-->
+
+</body>
+</html>

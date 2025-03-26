@@ -1,0 +1,7 @@
+C:\Users\molnarkaroly\Downloads\ServicePest\obj\Debug\ServicePest.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\ServicePest\obj\Debug\ServicePest.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\ServicePest\bin\Debug\ServicePest.exe.config
+C:\Users\molnarkaroly\Downloads\ServicePest\bin\Debug\ServicePest.exe
+C:\Users\molnarkaroly\Downloads\ServicePest\bin\Debug\ServicePest.pdb
+C:\Users\molnarkaroly\Downloads\ServicePest\obj\Debug\ServicePest.exe
+C:\Users\molnarkaroly\Downloads\ServicePest\obj\Debug\ServicePest.pdb

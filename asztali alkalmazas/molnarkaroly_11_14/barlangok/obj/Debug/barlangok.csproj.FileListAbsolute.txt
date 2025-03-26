@@ -1,0 +1,7 @@
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_14\barlangok\obj\Debug\barlangok.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_14\barlangok\obj\Debug\barlangok.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_14\barlangok\bin\Debug\barlangok.exe.config
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_14\barlangok\bin\Debug\barlangok.exe
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_14\barlangok\bin\Debug\barlangok.pdb
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_14\barlangok\obj\Debug\barlangok.exe
+C:\Users\molnarkaroly\Downloads\molnarkaroly_11_14\barlangok\obj\Debug\barlangok.pdb

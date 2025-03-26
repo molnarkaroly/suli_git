@@ -1,0 +1,5 @@
+Az oldalon használt színek:
+#E8E8E8 háttérszín a bal oldalon
+#800000 betűszín a bal oldalon
+#FFFFFF háttérszín a jobb oldalon
+#484848 betűszín a jobb oldalon

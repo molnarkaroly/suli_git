@@ -1,0 +1,7 @@
+C:\Users\molnarkaroly\Downloads\kinevetAvegen\bin\Debug\kinevetAvegen.exe.config
+C:\Users\molnarkaroly\Downloads\kinevetAvegen\bin\Debug\kinevetAvegen.exe
+C:\Users\molnarkaroly\Downloads\kinevetAvegen\bin\Debug\kinevetAvegen.pdb
+C:\Users\molnarkaroly\Downloads\kinevetAvegen\obj\Debug\kinevetAvegen.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\kinevetAvegen\obj\Debug\kinevetAvegen.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\kinevetAvegen\obj\Debug\kinevetAvegen.exe
+C:\Users\molnarkaroly\Downloads\kinevetAvegen\obj\Debug\kinevetAvegen.pdb

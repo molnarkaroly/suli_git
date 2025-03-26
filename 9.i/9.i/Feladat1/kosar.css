@@ -1,0 +1,27 @@
+#tovabb{
+	position:relative;
+	top:-39px;
+	left:580px;
+	width:120px;
+}
+
+#buttont{
+	color: #ffffff;
+	background-color: #eeff00;
+	font-size: 19px;
+	border: 1px solid #2d63c8;
+	padding: 15px 50px;
+}
+
+.tartalom{
+	width: 600px;
+}
+
+td{
+	size: 75px;
+	text-align: center;
+}
+
+body{
+	margin: auto;
+}

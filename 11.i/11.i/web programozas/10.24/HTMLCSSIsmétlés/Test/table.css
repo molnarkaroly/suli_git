@@ -1,0 +1,57 @@
+body{
+    background-color: #1c1c1c;
+}
+.angolTable{
+    margin-left: 150px;
+    background-color: #1a1a1a;
+    background-clip: content-box;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: right;
+    color: blue;
+    width: 700px;
+}
+.caption{
+    padding: 30px 5px;
+    text-align: center;
+    color: red;
+    font-size: 28px;
+    font-family: "Comic Sans MS", cursive;
+    text-decoration: underline;
+
+    border: 4px dashed greenyellow;
+    width: 600px;
+}
+.caption span{
+    font-variant: small-caps;
+    font-weight: bold;
+    color: blueviolet;
+}
+#pole{
+    border: 2px solid red;
+}
+tfoot{
+    background-color: grey;
+    color: black;
+    text-align: left;
+}
+/*
+tbody tr:nth-child(odd){
+    background-color: black;
+}
+td, th{
+    border: 1px solid bisque;
+    box-shadow: 3px 3px 3px white;
+}
+*/
+table{
+    table-layout: fixed;
+    width: 600px;
+    /*
+    caption-side: bottom;
+    border-collapse: collapse;
+    empty-cells: hide;
+    */
+    
+}

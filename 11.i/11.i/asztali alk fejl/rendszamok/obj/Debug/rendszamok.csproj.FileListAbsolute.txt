@@ -1,0 +1,7 @@
+C:\Users\molnarkaroly\Downloads\rendszamok\bin\Debug\rendszamok.exe.config
+C:\Users\molnarkaroly\Downloads\rendszamok\bin\Debug\rendszamok.exe
+C:\Users\molnarkaroly\Downloads\rendszamok\bin\Debug\rendszamok.pdb
+C:\Users\molnarkaroly\Downloads\rendszamok\obj\Debug\rendszamok.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\rendszamok\obj\Debug\rendszamok.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\rendszamok\obj\Debug\rendszamok.exe
+C:\Users\molnarkaroly\Downloads\rendszamok\obj\Debug\rendszamok.pdb

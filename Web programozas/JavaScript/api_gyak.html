@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api_nameday</title>
+</head>
+<body>
+<!--https://nameday.abalin.net/docs/-->
+
+    <button type="button" onclick="LoadDoc()">Adat kérése</button>
+    <input type="date" name="date" id="datee">
+    <select id="orszagok"></select>
+
+    </select>
+
+<p>A kiválasztpott adatok alapján: </p>
+<p id="nevnaposok"></p>
+<p>nekik bódogat</p>
+
+    <script>
+        function LoadDoc() {
+            const url = new URL(
+    "https://nameday.abalin.net/api/V1/getdate"
+    );
+
+    const params = {
+        "day": document.getElementById("datee").valueAsDate.getDate(),
+        "month": document.getElementById("datee").valueAsDate.getMonth() + 1,
+        "country": `${document.getElementById("orszagok").value}`,
+    };
+
+
+        Object.keys(params)
+            .forEach(key => url.searchParams.append(key, params[key]));
+
+            const headers = {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+            };
+
+            fetch(url, {
+                method: "GET",
+                headers,
+            }).then(response => response.json())
+                .then(data => document.getElementById("nevnaposok").innerHTML = JSON.stringify(data.nameday));
+
+        }
+
+
+        function getCountryList() {
+  const url = new URL("https://nameday.abalin.net/api/V1/getdate");
+
+  const params = {
+    "day": "1",
+    "month": "1",
+    "country": "",
+  };
+
+  Object.keys(params)
+    .forEach(key => url.searchParams.append(key, params[key]));
+
+  const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+  };
+
+  fetch(url, {
+    method: "GET",
+    headers,
+  }).then(response => response.json())
+    .then(data => {
+      const countryList = Object.keys(data.nameday).map(country => {
+        return {
+          code: country,
+          name: getCountryName(country)
+        };
+      });
+      const selectMenu = document.getElementById("orszagok");
+      countryList.forEach(country => {
+        const option = document.createElement("option");
+        option.value = country.code;
+        option.text = country.name;
+        selectMenu.appendChild(option);
+      });
+    });
+}
+
+function getCountryName(code) {
+  switch (code) {
+    case "at":
+      return "Ausztria";
+    case "bg":
+      return "Bulgária";
+    case "cz":
+      return "Csehország";
+    case "de":
+      return "Németország";
+    case "dk":
+      return "Dánia";
+    case "ee":
+      return "Észtország";
+    case "es":
+      return "Spanyolország";
+    case "fi":
+      return "Finnország";
+    case "fr":
+      return "Franciaország";
+    case "gr":
+      return "Görögország";
+    case "hr":
+      return "Horvátország";
+    case "hu":
+      return "Magyarország";
+    case "it":
+      return "Olaszország";
+    case "lt":
+      return "Litvánia";
+    case "lv":
+      return "Lettország";
+    case "pl":
+      return "Lengyelország";
+    case "ru":
+      return "Oroszország";
+    case "se":
+      return "Svédország";
+    case "sk":
+      return "Szlovákia";
+    case "us":
+      return "Egyesült Államok";
+    default:
+      return "Ismeretlen";
+  }
+}
+
+getCountryList();
+
+    </script>
+</body>
+</html>

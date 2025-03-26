@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fotozzás/ ajánlatok</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    
+</head>
+<body>
+
+
+
+
+<div class="contener">
+<p  class="slogo">                      
+<img class="logo" src="logo.png" alt="logo.png"></p>
+</div>
+<ul class="nav justify-content-center ">
+    <li class="nav-item ">
+      <a class="nav-link " href="index.html"> <font class="fcolor"> Kezdő lap</font></a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link " href="ref.html" > <font class="fcolor"> Referenciák</font></a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link " href="#""><font id="color"><b>Ajánlatok</b></font></a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link  " href="elerhetosegek.html"><font class="fcolor">Elérhetőségeim</font></a>
+      </li>
+  </ul>
+
+  <hr color="black" size="7px">
+
+
+
+ 
+  <h2>Kép rendelés</h2>
+  <p> </p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Kép kódja</th>
+        <th>Kép fajta</th>
+        <th>Ár</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> <i> 0001</i></td>
+        <td><b>Portré</b></td>
+        <td><b>1000Ft</b>  /db</td>
+      </tr>
+      <tr>
+        <td>0002</td>
+        <td><b>Születésnap</b> </td>
+        <td> <b> 2500Ft</b>/db</td>
+      </tr>
+      <tr>
+        <td>0003</td>
+        <td><b>Iskolai</b></td>
+        <td> <b>10.000Ft </b>  / osztály</td>
+      </tr>
+      <tr>
+        <td>0004</td>
+        <td><b>Rendezvény</b></td>
+        <td><b>20-60.000 Ft </b></td>
+      </tr>
+      <tr>
+        <td>0005</td>
+        <td> <b> Esküvő</b></td>
+        <td> <b> 300.000 Ft</b></td>
+      </tr>
+      <tr>
+        <td>0006</td>
+        <td><b>Igazolvány</b></td>
+        <td><b>2000Ft</b> /4db</td>
+      </tr>
+      <tr>
+        <td>0007</td>
+        <td><b>Egyéni</b></td>
+        <td><b>Megegyezés alapján</b></td>
+      </tr>
+      
+    </tbody>
+    
+  </table>
+</div>
+
+ <p id="rendeles"> <b> Rendelés </b></p>
+
+ <form action="mailto:molnar.karoly@diak.szbi-pg.hu" method="POST" >
+
+<p id="szemelyesrendeles"> <b> Személyes adatok: </b></p>
+
+ <div class="form-floating">
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+      </div>
+  </div>
+
+<div class="form-floating mb-3">
+    <div class="row">
+    
+        <div class="col">
+          <input type="email" class="form-control" placeholder="Email cím" aria-label="email ">
+        </div>
+      </div>
+  </div>
+ <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Telefon szám</span>
+    <span class="input-group-text" id="inputGroup-sizing-default">+36</span>
+    <input type="text" size="8"  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+  
+  <p id="keprendeles"> <b> Képek: </b></p>
+
+  <input class="form-control form-control-lg" type="text" placeholder="Képek kódja ( több kép esetén ; vel elválasztva)" aria-label=".form-control-lg example">
+
+
+ 
+  <div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect01">Képek száma összesen</label>
+    <select class="form-select" id="inputGroupSelect01">
+      <option selected>...</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="more">több</option>
+    </select>
+  </div>
+
+ 
+
+
+<p class="center">
+  <button type="submit" class="btn btn-primary">Rendelés leadása</button>
+</p>
+
+</body>
+</html>

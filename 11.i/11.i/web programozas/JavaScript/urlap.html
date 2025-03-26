@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urlap</title>
+</head>
+<body>
+    <form action="" name="urlap" onsubmit="ellenor();">
+        <p><input type="text" name="tel"></p>
+        <p><input type="text" name="mail"></p>
+        <p><input type="color" name="szin" id="color" oninput="szinez();"></p>
+
+
+        <input type="submit" value="submit">
+    </form>
+
+
+    <script>
+        function telefonElenor(s){
+            error ="";
+            let nwStrng = s.replace(/[\+\(/).\.\-\ ]/g, '');
+            let filter = /^\d+$/;
+            if(!filter.test(nwStrng))
+            {
+                error="Kérem addjon meg érvényes telefonszámot!\n";
+            }
+            return error;
+        }
+
+        function emailEllenor(s){
+            error ="";
+            let filter = /^.+@.+\..{2,6}$/;
+            if(!filter.test(s)){
+                error="Kérem addjon meg érvényes email címet!\n";
+
+            }
+            return error;
+
+        }
+
+
+        function ellenor(){
+            let tel = document.forms["urlap"]["tel"].value;
+            let mail = document.forms["urlap"]["mail"].value;
+            if(telefonElenor(tel))
+            {
+                alert(error);
+            }
+            else if(emailEllenor(mail))
+            {
+                alert(error);
+            }
+        }
+
+
+        function szinez(){
+            let c = document.getElementById("color").value;
+            document.body.style.backgroundColor = c;
+        }
+
+    </script>
+
+</body>
+</html>

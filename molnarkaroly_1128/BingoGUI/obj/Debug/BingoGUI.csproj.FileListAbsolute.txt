@@ -1,0 +1,10 @@
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1128\BingoGUI\bin\Debug\BingoGUI.exe.config
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1128\BingoGUI\bin\Debug\BingoGUI.exe
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1128\BingoGUI\bin\Debug\BingoGUI.pdb
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1128\BingoGUI\obj\Debug\BingoGUI.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1128\BingoGUI\obj\Debug\BingoGUI.Form1.resources
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1128\BingoGUI\obj\Debug\BingoGUI.Properties.Resources.resources
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1128\BingoGUI\obj\Debug\BingoGUI.csproj.GenerateResource.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1128\BingoGUI\obj\Debug\BingoGUI.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1128\BingoGUI\obj\Debug\BingoGUI.exe
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1128\BingoGUI\obj\Debug\BingoGUI.pdb

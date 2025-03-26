@@ -1,0 +1,70 @@
+
+#page{
+    width: 1200px;
+    margin: 0 auto;
+    display: table;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+
+}
+
+.panel{
+    display: table-cell;
+    border-radius: 10px;
+    line-height: 25px;
+}
+
+#panel1{
+    width: 430px;
+    float: left;
+    background-color: #ffeeee;
+    color: #880000;
+    list-style-image: url("icon_bad.png");
+    box-shadow: 5px 5px 5px 800;
+
+}
+
+#panel2{
+    width: 280px;
+background-image: url("opposite_arrows.jpg");
+background-size: 200px;
+background-repeat: no-repeat;  
+float: left;
+    height: 600px;
+}
+
+.panel3{
+    width: 430px;
+    float: left;
+    background-color: brown;
+    border:2px solid rgb(29, 124, 0);
+    text-align: left;
+    list-style-image: url("icon_good.png");
+    font-size: large;
+    color:#006600;
+    box-shadow: 5px 5px 5px 800;
+}
+
+#panel1 h1{
+ font-size: 1,5em;
+}
+
+#panel2 h1{
+    font-size: 1,5em;
+   }
+
+#doboz{
+    background-color: #004;
+    color: yellow;
+    border: 5px double yellow;
+    height: 100px;
+    width: 400px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px 10px;
+    text-align: justify;
+    position: relative;
+    top: 500px;
+    left: 500px;
+    transf
+}

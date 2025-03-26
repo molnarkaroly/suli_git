@@ -1,0 +1,17 @@
+A feladatok megoldására elkészített SQL parancsokat illessze be a feladat sorszáma után!
+
+1. feladat:
+SELECT COUNT(*) AS "összes vasarlas" , AVG(összeg) AS "átlagos összeg" FROM `vasarlasok`;
+
+2. feladat:
+SELECT Név, Irányítószám, Város, Utca FROM `torzsvasarlok` WHERE Név LIKE "P%" AND Város != "Budapest";
+
+3. feladat:
+SELECT `BoltID`, COUNT(*) AS "vasarlasok szama", SUM(Összeg) AS "elköltött összeg" FROM `vasarlasok` GROUP BY BoltID;
+
+4. feladat:
+SELECT Név, `Dátum` FROM `vasarlasok` INNER JOIN torzsvasarlok ON vasarlasok.Kártyaszám = torzsvasarlok.Kártyaszám ORDER BY Név;
+
+5. feladat:
+/*SELECT `Dátum`  FROM `vasarlasok` WHERE COUNT(VásárlásID) < (SELECT SUM(VásárlásID) / COUNT(VásárlásID) FROM vasarlasok);
+*/

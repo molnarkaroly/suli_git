@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Példa 1
+    <div id="uzenet"></div>
+-->
+    <!--Példa 2 
+    <p><button onclick="clickCounter()" type="button">Kattincs</button></p>
+    <p id="szamlalo"></p>
+-->
+    <!--Példa 3 
+    <p><button onclick="clickCounter()" type="button">Kattincs</button></p>
+    <p id="szamlalo"></p>
+-->
+    <!--Példa 4
+    -->
+    
+    
+    <script>
+        /* Példa 1
+        if(typeof(Storage) != "undefined")
+        {
+            localStorage.setItem('csaladnev', 'Szabo');
+        
+            // localStorage.csaladnev= 'Szabo';
+
+            document.getElementById('uzenet').innerHTML = localStorage.getItem('csaladnev');
+
+            //localStorage.csaladnev;
+
+        }
+        else{
+            document.getElementById('uzenet').innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+        //localStorage.removeItem('csaladnev');
+        //localStorage.clear();
+        //localStorage.key(0);
+        */
+        /* Példa 2
+
+        function clickCounter(){
+            if(sessionStorage.clickcount)
+            {
+                sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+            }
+            else{
+                sessionStorage.clickcount = 1;
+            }
+            document.getElementById('szamlalo').innerHTML = "Kattintások száma: " + sessionStorage.clickcount + "   alkalommal kattintottál a gombra";
+        }
+        
+        */
+        /* Példa 3
+
+        function clickCounter(){
+            if(localStorage.clickcount)
+            {
+                localStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+            }
+            else{
+                localStorage.clickcount = 1;
+            }
+            document.getElementById('szamlalo').innerHTML = "Kattintások száma: " + localStorage.clickcount + "   alkalommal kattintottál a gombra";
+        }
+        
+        //*/
+        /* Példa 4
+        */
+        
+
+        
+    </script>
+</body>
+</html>

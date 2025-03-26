@@ -1,0 +1,56 @@
+div{
+    margin-left: 150px;
+    background-color: #ff0;
+    background-clip: content-box;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: right;
+    color: #00f;
+    font-size: 24px;
+    width: 600px;
+
+}
+
+caption{
+    padding: 30px 5px;
+    text-align: left;
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    color: red;
+    background-color: #3f3;
+    border: 4px dashed #f3c;
+    /*width: 600px;*/
+
+}
+
+
+span{
+    font-variant: small-caps;
+    font-weight: bold;
+    color:#33cc;
+}
+
+#pole{
+    border: 2px solid #f00;
+}
+
+tfoot{
+    background-color: #ccc;
+    color: #000;
+    text-align: left;
+}
+/*
+tbody > tr:nth-child(odd){
+    background-color: #0f0;
+}
+
+*/
+
+td, th{
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black ;
+}
+

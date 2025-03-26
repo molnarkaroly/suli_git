@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Crucial';
+    src: url('Crucial-Medium.woff2') format('woff2'),
+        url('Crucial-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.kep{
+    height: 150px;
+
+}
+
+body {
+    background-color:rgb(65, 65, 65);
+    background-image: url(bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-attachment: scroll;
+}
+p { text-align:justify;
+    color:rgb(0, 255, 0); font-size: 24;
+    font-family:'Crucial';
+
+}
+h1{ 
+    color:blue; (80,177,128,);
+    font-family:'Crucial';
+     /*ez a h1 címsor szine*/
+}
+h2{ 
+    font-variant: small-caps;
+    text-decoration: underline;
+    color:yellow; (80,177,128,);
+}
+h3{ 
+    text-transform: uppercase;
+    color:purple; (80,177,128,);
+}
+
+.news { 
+    background-image: url(bg_2.jfif);
+    background-attachment: fixed;
+    width: 500px;
+    background-color: rgb(8, 118, 126);
+    padding: 20px;
+    margin: 0 auto;
+    border: 3px solid red;
+}
+.news p{
+    font-size: 25px;
+}
+ol{
+    list-style-type: upper-roman;
+}
+ol ul{
+    list-style-type: square;
+}
+ ol ul ul{
+     list-style-type: lower-latin;
+ }
+ ol ul ol ul{
+     list-style-type: disc;
+    list-style-image: checked.png;
+ }
+
+ ul{
+    list-style-position: inside;
+
+ }
+
+table td; table th;{
+    border:3px ;
+    width: 300px;
+    maegin: 0 auto;
+    background color: red
+}

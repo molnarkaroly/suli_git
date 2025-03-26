@@ -1,0 +1,17 @@
+Repjárat(_szám)
+reptér(_ID, város)
+alkalmazott(_TBSzám, név)
+egyrepules(_datum, ar, szám)
+legénység(_szám,_dátum_TBszám)
+HonnanHova(_szám,indulas, erkezes, IDind, IDérk)
+
+Orvos(_ID, Név)
+Beteg(_TBszám, név)
+Nővér(ID, név)
+Vizsgalat(dátum, időpont)
+
+Épulet(_név, epiteskezd, epites veg, hely)
+munkas(_szemelysiszam, nev, munkakor)
+epitesz(_szemelyiszam, nev)
+dolgozot(_epuletnev, szemelyiszam)
+tervezte(_epuletnev, szemelyiszam)s

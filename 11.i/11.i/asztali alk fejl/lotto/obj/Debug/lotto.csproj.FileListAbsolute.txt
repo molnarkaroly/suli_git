@@ -1,0 +1,7 @@
+C:\Users\molnarkaroly\Downloads\lotto\bin\Debug\lotto.exe.config
+C:\Users\molnarkaroly\Downloads\lotto\bin\Debug\lotto.exe
+C:\Users\molnarkaroly\Downloads\lotto\bin\Debug\lotto.pdb
+C:\Users\molnarkaroly\Downloads\lotto\obj\Debug\lotto.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\lotto\obj\Debug\lotto.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\lotto\obj\Debug\lotto.exe
+C:\Users\molnarkaroly\Downloads\lotto\obj\Debug\lotto.pdb

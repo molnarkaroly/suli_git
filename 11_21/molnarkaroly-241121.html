@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: lightyellow;
+    }
+    #container
+    {
+        width: 1000px;
+        margin: auto;
+    }
+    img{
+        height: 250px;
+        bottom: 0;
+        left: 0;
+    }
+    .table_Container{
+        width: 450px;
+        background-color: rgba(3, 92, 133, 0.452);
+        padding: 10px;
+        float: left;
+        height: 480px;
+        border-radius: 25px;
+        margin: 5px;
+        
+    }
+
+    .table_Container table{
+
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        bottom: 5px;
+    }
+
+    .table_Container > p{
+        text-align: center;
+        bottom: 5px;
+        font-weight: bolder;
+    }
+
+    
+
+
+</style>
+<body>
+
+    <div id="container">
+        <h1 style=" text-align: center;">Star Wars Szereplők</h1>   
+
+    </div>
+
+    
+
+
+<script>
+
+    
+        function LoadDoc() {
+        let table = document.getElementById("table");
+        let xhttp = new XMLHttpRequest();
+        
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                const obj = JSON.parse(this.responseText);
+                console.log(obj);  
+                console.log(obj.data[0].name);  
+                
+
+
+                for (let i = 0; i < obj.data.length; i++) {
+                    document.getElementById("name"+ i).innerHTML = obj.data[i].name;
+                    document.getElementById("img"+ i).src = obj.data[i].image;
+                    document.getElementById("p"+ i).innerHTML = obj.data[i].description;
+                }
+                
+
+                console.log(document.querySelectorAll('[id^="name"]').length);
+
+
+            }
+        };
+        xhttp.open("GET", "https://starwars-databank-server.vercel.app/api/v1/characters", true);
+        xhttp.setRequestHeader("content-type", "application/json");
+        xhttp.setRequestHeader("Accept", "application/json");
+        xhttp.send();
+
+
+
+        }
+        LoadDoc();
+
+
+        function createDivs(num) {
+            let container = document.getElementById("container");
+            for (let i = 0; i < num; i++) {
+                let div = document.createElement("div");
+                div.classList.add("table_Container");
+                div.innerHTML = `<p id="name${i}"></p>
+                <table>
+                    <tr>
+                        <td><img id="img${i}" src="" alt="kép"></td>
+                        <td><p id="p${i}"></p></td>
+                    </tr>
+                </table>`;
+                container.appendChild(div);
+            }
+        }
+        createDivs(10);
+
+</script>
+
+
+</body>
+</html>

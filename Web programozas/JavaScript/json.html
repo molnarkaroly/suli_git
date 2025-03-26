@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+
+    <script>
+      /*  let text = '{"tanulok":[{"vezetekNev": "Lapos", "keresztNev": "Elemér"}, {"vezetekNev": "Teszt", "keresztNev": "Elek"}, {"vezetekNev": "Ultra", "keresztNev": "Ibolya"}]}';
+        
+        const obj = JSON.parse(text);
+        document.getElementById("demo").innerHTML = obj.tanulok[1].vezetekNev + " " + obj.tanulok[1].keresztNev;
+*/
+
+        const obj = {
+            vezetekNev: "Cserép",
+            keresztNev: "Virág",
+            kor: 18,
+            lakhely: "Szeged" 
+            
+        }
+
+        let text = JSON.stringify(obj);
+        console.log(text);
+
+    </script>
+
+</body>
+</html>

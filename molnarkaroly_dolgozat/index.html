@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+
+    }
+    body{
+        background-color: burlywood;
+    }
+    td{
+        border: 1px solid black;
+    }
+
+    .delete-btn{
+        color: white;
+        background-color: red;
+    }
+</style>
+<body>
+    
+    <h1>Tanulo azonositok</h1>
+
+    <div class="card">
+        <div id="add-task">
+            <form style="padding-left: 40%;">
+                <p>Neve:                      <input type="text" id="neve" class="form-input"></p>
+                <p>Oktatasi azonosito:  <input type="text" id="azon" class="form-input"></p>
+                <button type="button" class="add-btn" onclick="add();">Hozzáad</button>
+                <button type="button" style="background-color: red; color: white;" id="delete-all" class="delete-btn" onclick="deleteAllBtn();">Mindent töröl</button>
+
+            </form>
+        </div>
+        <div id="task-container"></div>
+        <table style="margin-left: 40%; margin-top: 1%;">
+            <tbody>
+                <tr>
+                    <th>Neve</th>
+                    <th>Oktatasi azonositó</th>
+                    <th>  </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<script>
+        function add(){
+            const tbody = document.getElementsByTagName("tbody")[0];
+            const name = document.getElementById("neve").value;
+            const azon = document.getElementById("azon").value;
+
+            if(name == "" || azon == "")
+            {   
+                alert("Hiba!");
+                return;
+            }
+
+            const row = document.createElement("tr");
+            const col1 = document.createElement("td");
+            col1.innerText = document.getElementById("neve").value;
+            const col2 = document.createElement("td")
+
+            if(numberCheck(azon))
+            {
+                col2.innerText = azon;
+
+            }
+            else{
+                alert("Hibás azonositó");
+                return;
+            }
+            const col3 = document.createElement("td")
+            const delbtn = document.createElement("button");
+            delbtn.innerText = "X";
+            delbtn.setAttribute("type", "button")
+            delbtn.setAttribute("onclick", "delFnc(this)")
+            delbtn.classList.add("delete-btn");
+            col3.append(delbtn);
+
+
+            row.append(col1, col2, col3);
+            tbody.append(row);
+        }
+
+
+        function numberCheck(num){
+
+            let egyedi = 0;
+            for(let i = 1; i < num.length-1; i++){
+                egyedi += num[i];
+            }
+
+            let szam = 0;
+            for(let i = 1; i < 10; i++){
+                szam = parseInt(szam) + parseInt(egyedi[i])*i;
+                console.log(szam);
+            }
+
+
+            if(num.length == 11 && num[0] == "7" && szam % 11 == parseInt(num[11]))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        function delFnc(btn){
+            const tbody = document.getElementsByTagName("tbody")[0];
+            const row = btn.parentNode.parentNode;
+            tbody.removeChild(row);
+        }
+
+
+
+
+
+    function deleteAllBtn(){
+        const tbody = document.getElementsByTagName("tbody")[0];
+        while(tbody.hasChildNodes()){
+            tbody.removeChild(tbody.firstChild)
+        }
+    }
+</script>
+
+</body>
+</html>

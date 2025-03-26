@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szorzotabla</title>
+    <link rel="stylesheet" href="szorzotabla.css">
+</head>
+<body>
+
+
+        <table>
+            <tbody>
+                <thead>
+                    <tr></tr>
+                </thead>
+            </tbody>
+        </table>
+
+    <script>
+        const X = 20;
+        const Y = 20;
+        for (var i = 1; i < X+1; i++) {
+            const tbody = document.getElementsByTagName("tbody")[0];
+            const row = document.createElement("tr");
+                for (var j = 1; j < Y+1; j++) {
+                    const col = document.createElement("td");
+                    col.innerHTML = i*j;
+                    if(i % 5 == 0 || j % 5 == 0) 
+                        {
+                            col.classList.add("ot");
+                        }
+                    else{
+                        col.classList.add("allc");
+
+                    }
+
+                    if(j == 1 || i == 1){
+                        col.classList.add("border");
+                    }
+
+                    row.append(col);
+            
+                }
+        tbody.append(row);
+        }
+        
+        const table = document.getElementsByTagName("table")[0];
+        table.style.backgroundColor = "rgb(8, 126, 8)"
+
+
+        
+    </script>
+
+</body>
+</html>

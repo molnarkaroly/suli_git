@@ -1,0 +1,29 @@
+1 feladat
+CREATE TABLE konyv (
+    azonosito TEXT(11),
+    cim TEXT(30),
+    szerzo TEXT(20),
+    ki_datum DATE
+);
+ALTER TABLE `konyv` ADD PRIMARY KEY(`azonosito`);
+
+
+2 feladat
+ALTER TABLE konyv
+ADD kolcsonozheto bool;
+
+
+3 feladat
+ALTER TABLE konyv
+DROP COLUMN ki_datum;
+
+
+4.feladat
+INSERT INTO konyv (azonosito, cim, szerzo, kolcsonozheto)
+VALUES ('F1232145698', 'A hobbit', 'J. R. R. Tolkien', true);
+
+
+5.feladat
+UPDATE konyv
+SET kolcsonozheto = false
+WHERE azonosito = 'F1232145698';

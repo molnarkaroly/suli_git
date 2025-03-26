@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forditva</title>
+</head>
+<body>
+<form action=""name="urlap" onsubmit="kiir();">
+    <p><input type="text" name="a" id="a" oninput="kiir()"></p>
+
+</form>
+    <script>
+        function kiir() {
+            str = document.getElementById("a").value;
+            var splitString = str.split("");
+            var reverseArray = splitString.reverse();
+            var joinArray = reverseArray.join("");
+            alert(joinArray);
+            return joinArray;
+    }
+    </script>
+
+</body>
+</html>

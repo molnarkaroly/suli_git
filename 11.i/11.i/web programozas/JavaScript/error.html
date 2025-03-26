@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NonError</title>
+</head>
+<body>
+    <script>
+        /**
+        function divide(a, b) {
+            if (b == 0)
+            {
+                throw " division by zero";
+            }
+            return a/b;
+        }
+
+        function logDivide(a, b) 
+        {
+            try{
+                console.log(a + "/" + b + "=" + divide(a,b) );
+
+            }catch(error){
+                console.log("Error:" + error);
+            }finally{
+                console.log("division finished");
+            }
+        }
+
+        logDivide(5,0);
+        logDivide(5,2);
+        */
+
+/*
+        class DivisionByZeroError extends Error{
+            constructor(...params){
+                super(...params);
+            }
+
+        }
+
+        function divide(a, b) {
+            if (b == 0)
+            {
+                throw new divideByZeroError;
+            }
+            return a/b;
+        }
+
+        function logDivide(a, b) 
+        {
+            try{
+                console.log(a + "/" + b + "=" + divide(a,b) );
+
+            }catch(error){
+                if (error instanceof DivisionByZeroError)
+                {
+                    console.log("DivisionByZeroError");
+                }
+                else{
+                    console.log("Error:" + error);
+                }
+            }finally{
+                console.log("division finished");
+            }
+        }
+
+        logDivide(5,0);
+        logDivide(5,2);
+*/
+
+
+/**
+ * ? -----------------destructuring--------------------*/
+/*
+ let arr = [ 2,3,];
+ let a = arr[0];
+ let b = arr[1];
+ console.log(a);
+ console.log(b);
+*/
+
+/*
+let [a , b] = [2,3]
+console.log(a);
+console.log(b);
+*/
+
+/*
+let [a, b , ...c] = [ 1,2,3,4,5,6,7,8]
+console.log(a);
+console.log(b);
+console.log(c);
+*/
+
+/*
+        let person ={
+            firstName : "Béla",
+            lastName  : "Faragó",
+            age : 45
+        }
+
+        let vezeteknev = person.lastName;
+        let keresztnev = person.firstName;
+        let kor = person.age;
+
+        let{lastName: vezetekNev, firstName: keresztNev} = person;
+
+        function printShort(person){
+            console.log(person.firstName + " (" + person.age + ") ");
+        }
+
+        printShort(person);
+
+
+        function printShort1({firstName: firstName, age: age}){
+            console.log(firstName + " (" + age + ")");
+        }
+
+        printShort1(person);
+
+
+
+
+        function printShort2({firstName, age}){
+            console.log(firstName + " (" + age + ")");
+        }
+
+        printShort2(person);
+*/
+
+
+    </script>
+</body>
+</html>

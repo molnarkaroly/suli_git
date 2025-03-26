@@ -1,0 +1,8 @@
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1107\reklam\obj\Debug\reklam.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1107\reklam\obj\Debug\reklam.csproj.SuggestedBindingRedirects.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1107\reklam\obj\Debug\reklam.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1107\reklam\bin\Debug\reklam.exe.config
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1107\reklam\bin\Debug\reklam.exe
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1107\reklam\bin\Debug\reklam.pdb
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1107\reklam\obj\Debug\reklam.exe
+C:\Users\molnarkaroly\Downloads\molnarkaroly_1107\reklam\obj\Debug\reklam.pdb

@@ -1,0 +1,67 @@
+$blue: #003f8b30;
+$margin: 16px;
+$textcolor: silver;
+
+.content-navigation{
+    border-color: $blue;
+    color: $blue;
+}
+
+.bordered{
+    padding: $margin/2px;
+    margin: $margin / 2;
+    border-color: $blue;
+}
+
+table.h1{
+margin: 2em 0;
+td{
+    text-align: right;
+}
+}
+
+li{
+    font:{
+        font-family: serif;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+}
+
+@mixin threedeetext($color){
+color:$color;
+text-shadow: 0 2px 0 darken($color, 15%),
+0 4px  0 darken($color,16%),
+0 6px 0 darken($color,18%),
+0 8px 0 darken($color, 20%),
+3px 8px 15px rgba(0,0,0,0.1),
+3px 8px 5px rgba(0,0,0,0.3),
+
+}
+
+h1{
+    font-size:120px;
+    @include threedeetext(#fdff7afd)
+}
+
+h2{
+    font-size: 90px;
+    @include threedeetext(lighten(#fdff7afd));
+
+}
+
+p{
+    color: $textcolor;
+    @if ligtness($textcolor) < 50%{
+        background-color: white;
+    }
+    @else { background-color: $blue};
+
+}
+/*
+@for $i from 1 through 4{
+    .column-#{$i} { margin: 10px * $i;};
+}
+*/
+
+

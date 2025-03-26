@@ -1,0 +1,150 @@
+using System.Collections.Generic;
+using System;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+namespace ezer_szam
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            StreamWriter kiir = new StreamWriter($"kiir{DateTime.Now.ToString()}.txt", false);
+
+            
+            List<int> radnomlist = new List<int>();
+
+            Random rnd = new Random();
+
+            int szam = 0;
+            for (int i = 0; i < 25; i++)
+            {
+                szam = rnd.Next(0, 1000);
+                radnomlist.Add(szam);
+            }
+
+            for (int i = 0; i < radnomlist.Count; i++)
+            {
+                Console.Write(radnomlist[i] + ", ");
+            }
+
+            int parosdb = 0;
+            int paratlandb = 0;
+            for (int i = 0; i < radnomlist.Count(); i++)
+            {
+                if (radnomlist[i] % 2 == 0)
+                {
+                    parosdb++;
+                }
+                else
+                {
+                    paratlandb++;
+                }
+            }
+
+
+            int primdb = 0;
+
+            
+
+            int szum = 0;
+            for (int i = 0; i < radnomlist.Count(); i++)
+            {
+                szum += radnomlist[i];
+            }
+
+            int atlag = 0;
+
+            atlag = szum / radnomlist.Count();
+
+            int atlagfelett = 0;
+            int atlagalatt = 0;
+            for (int i = 0; i < radnomlist.Count(); i++)
+            {
+                if (radnomlist[i] > atlag)
+                {
+                    atlagfelett++;
+                }
+                else if (radnomlist[i] == atlag)
+                {
+                    continue;
+                }
+                else
+                {
+                    atlagalatt++;
+                }
+            }
+
+            Console.WriteLine($"{parosdb}db páros van\n");
+            kiir.WriteLine($"{parosdb}db páros van\n");
+            for (int i = 0; i < radnomlist.Count(); i++)
+            {
+                if (radnomlist[i] % 2 == 0)
+                {
+                    Console.WriteLine(radnomlist[i]);
+                }
+                else
+                {
+                    continue;
+                }
+            }
+
+            Console.WriteLine($"\n{paratlandb}db paratlan van\n");
+            kiir.WriteLine($"\n{paratlandb}db paratlan van\n");
+            for (int i = 0; i < radnomlist.Count(); i++)
+            {
+                if (radnomlist[i] % 2 == 0)
+                {
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine(radnomlist[i]);
+
+                }
+            }
+
+
+            Console.WriteLine($"\nAz átlag {atlag}\n");
+            Console.WriteLine($"\nAz átlagaalatti szamok {atlagalatt} db\n");
+            kiir.WriteLine($"\nAz átlagaalatti szamok {atlagalatt} db\n");
+            for (int i = 0; i < radnomlist.Count(); i++)
+            {
+                if (radnomlist[i] > atlag)
+                {
+                    continue;
+                }
+                else if (radnomlist[i] == atlag)
+                {
+                    continue;
+                }
+                else
+                {
+                    Console.Write(radnomlist[i] + ", ");
+                }
+            }
+            Console.WriteLine($"\nAz átlag feletti szamok {atlagfelett} db\n");
+            kiir.WriteLine($"\nAz átlag feletti szamok {atlagfelett} db\n");
+
+            for (int i = 0; i < radnomlist.Count(); i++)
+            {
+                if (radnomlist[i] > atlag)
+                {
+                    Console.Write(radnomlist[i] + ", ");
+                }
+                else if (radnomlist[i] == atlag)
+                {
+                    continue;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+
+
+            Console.ReadKey();
+        }
+    }
+}

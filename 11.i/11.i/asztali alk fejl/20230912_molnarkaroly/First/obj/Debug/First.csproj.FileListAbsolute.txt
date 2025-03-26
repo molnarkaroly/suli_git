@@ -1,0 +1,8 @@
+C:\Users\molnarkaroly\Downloads\20230912_molnarkaroly\First\obj\Debug\First.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\20230912_molnarkaroly\First\obj\Debug\First.csproj.SuggestedBindingRedirects.cache
+C:\Users\molnarkaroly\Downloads\20230912_molnarkaroly\First\obj\Debug\First.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\20230912_molnarkaroly\First\bin\Debug\First.exe.config
+C:\Users\molnarkaroly\Downloads\20230912_molnarkaroly\First\bin\Debug\First.exe
+C:\Users\molnarkaroly\Downloads\20230912_molnarkaroly\First\bin\Debug\First.pdb
+C:\Users\molnarkaroly\Downloads\20230912_molnarkaroly\First\obj\Debug\First.exe
+C:\Users\molnarkaroly\Downloads\20230912_molnarkaroly\First\obj\Debug\First.pdb

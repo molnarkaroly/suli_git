@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p><span style="color: red;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sint quaerat inventore saepe harum cumque aut cupiditate, eos maxime aperiam fugiat, vero ipsa perspiciatis? Totam nam dolorem laborum earum provident.</span><span>Beatae sit harum vel excepturi hic officia. Repudiandae harum autem illo aperiam temporibus unde odit natus sit, deserunt tempore, aspernatur iusto consectetur maxime aliquam fugit hic consequatur adipisci dignissimos corrupti!</span><span>Minus harum repellat velit incidunt beatae soluta. Molestias possimus neque reprehenderit saepe incidunt facere ex laudantium sunt maxime nam, nisi repellat, delectus laboriosam, a quasi magnam nemo nulla illo eum?</span></p>
+
+    <ol type="1" start="3" reversed>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+    </ol>
+
+    <ul style="list-style-type: square;">
+        <li>
+            test
+            <ol>
+                <li>am</li>
+                <li>keh</li>
+            </ol>
+        </li>
+        <li>ah</li>
+        <li>uh</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>2</td>
+            <td rowspan="2">1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Ez egy távlázat</caption>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+        </tr>
+        <tr>
+            <td colspan="2">E-F</td>
+            <td>G</td>
+            <td rowspan="2">H-L</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td colspan="2" rowspan="2">N-O-R-S</td>
+            <td>P</td>
+        </tr>
+        <tr>
+            <td>Q</td>
+            <td>T</td>
+        </tr>
+    </table>
+
+    <img src="kutyus.jpg" alt="kutyus" title="Kutyus">
+
+    <p>&copy Copyright</p>
+
+    <p>H<sub>2</sub>O Km<sup>3</sup></p> <!--Alsó és felső index-->
+
+    <p><q>asdfghjkl</q></p> <!--Idézet-->
+
+    <abbr title="World Wide Web">WWW</abbr> <!--Rövidítés-->
+
+    <dfn></dfn>
+
+    <p><strong>Strong</strong> <em>Em</em> <mark>Mark</mark> <s>S áthúzás</s></p>
+
+    <pre>
+Ez az első sor
+    második
+         harmadik
+negyedik
+    </pre>
+
+    <meter min="10" max="100" value="40"></meter>
+
+    <figure>
+        <figcaption>Lista</figcaption>
+        <ul>
+            <li>Matek</li>
+            <li>Tesi</li>
+            <li>Angol</li>
+            <li>Kémia</li>
+        </ul>
+    </figure>
+
+    <p><span class="green">Szöveg</span></p> <!--Inline-->
+
+    <a href="https://szbi-pg.hu" target="_blank">Honlap</a>
+    <br>
+    <a href="kutyus.jpg">Kutya</a>
+    <br>
+    <a href="#top">Top</a>
+
+    <form action="post">
+        <p>Neve: <input type="text" name="nev" id="nev" placeholder="Név" size="10" maxlength="15"></p>
+        <p>Jelszó: <input type="password" name="pass"></p>
+        <p>Beszélt nyelvek: 
+            <input type="checkbox" name="en"> angol
+            <input type="checkbox" name="hu" checked> magyar
+            <input type="checkbox" name="de"> német
+            <input type="checkbox" name="it"> olasz
+        </p>
+        <p>Válasz:
+            <input type="radio" name="valasz" checked> igen
+            <input type="radio" name="valasz"> nem
+            <input type="radio" name="valasz"> talán
+        </p>
+        <p>
+            Dátum: <input type="date" name="datum"> <br>
+            Hónap: <input type="month" name="honap"> <br>
+            Hét: <input type="week" name="het"> <br>
+            Idő: <input type="time" name="ido">
+        </p>
+        <p>
+            <input type="range" name="mennyiseg" min="100" max="500" value="200" step="50"> <br>
+            <input type="number" name="szam" min="20" max="150" value="30" step="5">
+        </p>
+        <p><input type="file" name="fájl"></p>
+        <p><input type="color" name="szin"></p>
+        <p>
+            <label for=""> Kedvenc gyümölcsöd
+                <select name="">
+                    <option value="bar">barack</option>
+                    <option value="d">dinnye</option>
+                    <option value="a">alma</option>
+                    <option value="sz">szilva</option>
+                    <option value="ban">banán</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <fieldset>
+                <legend>a</legend>
+            </fieldset>
+        </p>
+        <p>Szöveg: <textarea name="megjegyzs" cols="30" rows="10"></textarea></p>
+        <p>
+            <input type="reset" value="Törlés">
+            <input type="submit" value="Küldés">
+        </p>
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <div id="content">
+        <div class="news">
+            <img class="jobbra" src="kutyus.jpg" alt="kutya" title="kutya">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga expedita saepe consequatur sit suscipit nulla eius incidunt sint corporis illum commodi tenetur autem earum ducimus quis dignissimos obcaecati, iste et.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptates error nobis expedita numquam voluptate quas. Illo optio vel ipsam molestiae ex quos laborum impedit, non earum rerum ad ratione.</p>
+        </div>
+        <div class="news">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et animi tempora minima tenetur recusandae, ipsa maxime excepturi natus voluptatum placeat eius ducimus est dolore aperiam accusamus eos delectus, vero nostrum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, perspiciatis? Vero vel expedita nostrum quia, soluta explicabo? Dicta necessitatibus fugiat non tempora minus quidem veritatis voluptatum exercitationem, beatae libero nam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero facilis at velit ut magnam dolore maxime architecto ducimus illo quasi ab, numquam illum non sit rem. Id, commodi labore.</p>
+        </div>
+        <div class="enter"></div>
+        <div class="news2">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi officia fugit quisquam totam maxime voluptates mollitia. Odio corporis dolor tempore delectus itaque velit, fugiat, quis harum officia facilis, molestias cum!</p>
+        </div>
+        <div class="news2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate laborum ducimus saepe, deleniti, corporis a molestias laboriosam voluptatem iste placeat eos? Reprehenderit aut delectus beatae fugit. Eius harum provident quos!</p>
+        </div>
+        <div class="news2">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, ipsam! Officiis recusandae, illo sequi quia quidem tenetur tempore, vero, rerum atque omnis eius expedita. Id quam quidem ipsum iusto voluptate?</p>
+        </div>
+        <div class="enter"></div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <table class="angolTabla">
+        <tr>
+            <th colspan="4">Ízelítő az angolszász hosszmértékekből</th>
+        </tr>
+        <tr>
+            <th>angol elnevezés</th>
+            <th>magyar fordítás</th>
+            <th>váltószám</th>
+            <th>metrikusan</th>
+        </tr>
+        <tr>
+            <td>inch</td>
+            <td>hüvelyk</td>
+            <td>=12* line</td>
+            <td>=2,25 cm</td>
+        </tr>
+        <tr>
+            <td>foot</td>
+            <td>láb</td>
+            <td>=12 inch</td>
+            <td>=30,48 cam</td>
+        </tr>
+        <tr>
+            <td>yard</td>
+            <td>rőf</td>
+            <td>= 3 foot</td>
+            <td>=91,44 cm</td>
+        </tr>
+        <tr>
+            <td>fathom</td>
+            <td>öl</td>
+            <td>=2 yard</td>
+            <td>=1,83 cm</td>
+        </tr>
+        <tr>
+            <td>pole</td>
+            <td>rúd</td>
+            <td>=5½ yard</td>
+            <td>=5,03 m</td>
+        </tr>
+        <tr>
+            <td>furlong</td>
+            <td>?</td>
+            <td>=40 pole</td>
+            <td>=201,16 m</td>
+        </tr>
+        <tr>
+            <td>statue mile</td>
+            <td>angol/szárazföldi mérföld</td>
+            <td>=8 furlong</td>
+            <td>=1609,33 m</td>
+        </tr>
+    </table>
+
+    <br><br><br><br><br>
+
+    <div id="csordul">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minima neque a, ad pariatur quos, molestias debitis suscipit repudiandae soluta facilis, maiores eius earum quis culpa sapiente! Dignissimos, debitis delectus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod distinctio magni deserunt voluptate quos quisquam beatae, ullam eius laborum, at voluptas. Sunt, commodi magnam. Ipsa, dolore. Odio et accusantium velit!
+        Vel, placeat dolorem perspiciatis libero harum omnis necessitatibus odit illum nisi aliquam optio qui, asperiores quaerat corporis, atque delectus suscipit aliquid quod nihil voluptatibus consequuntur? Impedit omnis deserunt maxime ipsa?
+        Itaque aperiam id distinctio, quisquam corrupti at odio nostrum unde beatae perspiciatis, quas exercitationem. In aliquam similique quia officia maxime doloribus sint incidunt repellat. Debitis odit architecto unde et cumque!
+        Blanditiis, rerum modi quo perferendis tempora ratione enim temporibus nostrum sequi! Asperiores dolor dolorum enim autem reprehenderit voluptatibus culpa quod libero accusantium quas nulla saepe vitae deleniti, rem expedita fugiat.</p>
+    </div>
+
+</body>
+</html>

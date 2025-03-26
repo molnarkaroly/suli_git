@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+    <h1 id="page-title" class="text-center">Feladataim</h1>
+    <script>  
+       console.log(document.getElementById("page-title"));
+       console.log(document.getElementsByTagName("h1")[0]);
+       console.log(document.getElementsByClassName("text-center")[0]);
+       console.log(document.querySelector("h1.text-center"));
+       console.log(document.querySelectorAll("h1.text-center")[0]);
+    </script>
+--->
+
+<!--
+<h1 id="page-title" class="text-center">Feladataim</h1>
+<div id="parent">
+    <p>Elso</p>
+    <p>Harmadik</p>
+</div>
+
+<script>
+    const parent = document.getElementById("parent");
+    const newParagraph = document.createElement("p");
+    newParagraph.innerHTML="Második";
+    parent.insertBefore(newParagraph, parent.children[1]);
+</script>
+-->
+<header>
+    <h1 id="page-title" class="text-center">Feladataim</h1>
+</header>
+
+<div class="card">
+    <div id="add-task">
+        <h2>Új feladat</h2>
+        <form>
+            <input type="text" id="taskText" class="form-input">
+            <button type="button" class="add-btn" onclick="addTask()">Hozzáad</button>
+        </form>
+    </div>
+    <div id="task-container" style="display: none;">
+        <h2>Feladataim</h2>
+        <table>
+            <tbody>
+                <thead>
+                    <tr>
+                    </tr>
+                </thead>
+            </tbody>
+        </table>
+        <button type="button" id="deleteAllTask" class="delete-btn" onclick="DeleteAllTask()">Összes feladat törlése</button>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    function addTask() {
+    const tbody = document.getElementsByTagName("tbody")[0];
+    const row = document.createElement("tr");
+    const col1 = document.createElement("td");
+    col1.innerText = document.getElementById("taskText").value;
+    const col2 = document.createElement("td");
+    const deleteBtn = document.createElement("button");
+    deleteBtn.innerText = "X";
+    deleteBtn.setAttribute('type', 'button');
+    deleteBtn.setAttribute('onclick', 'DeleteTask(this)');
+    deleteBtn.classList.add("delete-btn");
+    col2.append(deleteBtn);
+    row.append(col1, col2);
+    tbody.append(row);
+    document.getElementById("taskText").value = "";
+    showTasksContainer();
+    }
+
+
+    function DeleteTask(btn){
+        const tbody = document.getElementsByTagName("tbody")[0];
+        const row = btn.parentNode.parentNode;
+        tbody.removeChild(row);
+
+        if(!tbody.hasChildNodes().)
+        {
+            hideTasksContainer()
+        }
+    }
+
+    function DeleteAllTask(){
+        const tbody = document.getElementsByTagName("tbody")[0];
+        while(tbody.hasChildNodes())
+        {
+            tbody.removeChild(tbody.firstChild)
+        }
+        hideTasksContainer()
+    }
+
+    function hideTasksContainer(){
+        document.getElementById("task-container").style.display = "none";
+    }
+
+    function showTasksContainer(){
+        document.getElementById("task-container").style.display = "block";
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

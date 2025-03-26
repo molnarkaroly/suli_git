@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(26, 26, 26);
+}
+
+#befoglalo{
+    width: 450px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+#kep{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 2s linear;
+}
+
+#szine, #fonakja{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid black;
+
+}
+
+#fonakja{
+    transform: rotateY(180deg);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: gray;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+
+#kep:hover {
+transform: rotatex(180deg) rotateZ(180deg);
+}
+
+/*
+div{
+    height: 200px;
+    width: 200px;
+
+}
+
+#befoglalo{
+    border: 2px solid red;
+    background-color: yellow;
+    margin: 50px;
+    perspective: 600px;
+    perspective-origin: -50px -40px;
+
+}
+
+#traszformalando{
+    background-color: green;
+    transform: rotateY(45deg);
+    transform-style: preserve-3d;
+    
+}
+
+#gyerek{
+    background-color: pink;
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    transform: rotateX(45deg);
+
+}
+
+
+
+
+
+
+div:hover{
+    transform: scale(-1,0.5);
+    transform: translate(80px , 80px);
+    transform: rotate(45deg);
+    transform: skew(20deg, 30deg);
+    transform: translate(80px , 80px) scale(1.2, 1.2) rotate(30deg) skew(20deg, 30deg);
+    transform-origin: left top;
+    transform-origin: 300px;
+    transform: scale(-1);
+
+}  
+
+*/

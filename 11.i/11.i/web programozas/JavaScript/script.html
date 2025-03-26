@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bevezetés</title>
+    <!--script src="java.js"></script-->
+</head>
+<body>
+    <!--h1>JavaScript</h1>
+    <p>Ez a tartalom törlödik ha megnyomod a gombot</p>
+    <button type="button" onclick="document.write('megnyomtad -_-');">NE NYOMD MEG</button-->
+
+        <!--p id="teszt"></p-->
+
+    <script>
+      //  console.log("Hello world!");
+     //  document.write('Hello world!')
+    //document.getElementById("teszt").innerHTML = "Hello world!";
+   //window.alert("Hello world!");
+   /*
+   //szám
+        var a= 2;
+        console.log(a);
+        
+        let b = 3;
+        b = 4;
+        const c = 5;
+       
+   var x = 5;
+   console.log(x);
+   var x = "alma";
+   console.log(x);
+
+   let x = 5;
+   console.log(x);
+   x = "alma";
+   console.log(x);
+
+   let a = 123;
+   let b = -15.2;
+   let c = 5e5;
+   let d = 0xFA;
+   let e = 055;
+   let f = 0b11111110;
+   console.log(f);
+
+    //logikai
+    let a = true; 
+
+    let a = "alma"
+    let name = "Béla";
+    console.log(`Hello ${name} `); //altGr + 7 `` 
+
+
+    console.log(typeof(2))
+    console.log(typeof(true))
+    console.log(typeof("aladár"))
+    console.log(typeof({name : "Béla", age : 54}))
+    console.log(typeof(function(a,b){return a + b}))
+    console.log(typeof(none))
+*/ 
+/*
+    let x = 2;
+    let y;
+    y = x;
+
+    console.log(5 + '5') 
+    console.log(5 - '5') // :D
+    console.log(5 !== '5') // === és !== vizsgálja a tipus azonosságot is nem csak az értéket nézi
+
+    
+    let z;
+    z = 4 + 6;
+    z = 4 - 3;
+    z = 4 * 3;
+    z = 4 / 6; //valos osztás
+    z = 4 % 3; //maradék osztás maradék: 1
+    z = 3 ** 2;
+*/
+  /*  let x , y;
+    x = 5;
+    y = ++x;
+    console.log(y);
+    x = 5;
+    y = x++;
+    console.log(y);
+
+    console.log("Addig jár a korso a kutra amíg" + " be nem vezetik a vizet")
+    let x = 'kocka';
+    x += "has"
+    console.log(x)
+    
+*/
+
+    //let a = b > 2 ? c : d; //3 operandusu 
+/*
+    const gyumolcs = {fa:"alma" , fajta: "starking", szín: "piros"}
+    console.log("fajta" in gyumolcs)
+*/
+/*
+    console.log(Math.PI)
+    console.log(Math.abs(-23))
+    console.log(Math.ceil(3.21))
+    console.log(Math.ceil(-3.21)) //mindig  a nála nagyobb értékre kerekít a legközelebbi egészre
+    console.log(Math.floor(3.68))
+    console.log(Math.floor(-3.68))  //mindig  a nála kisebb értékre kerekít a legközelebbi egészre
+    console.log(Math.round(5.45))
+    console.log(Math.round(5.50)) // matematika szabályai alapján kerekít
+    console.log(Math.trunc(4.66))
+    console.log(Math.trunc(-4.66))// nem kerekít csak vissza adja az egész részt
+    console.log(Math.trunc(Math.random(0,10)*10))//saját kisérleta
+
+*/
+/*
+    "dog" + "house" == "doghouse";//true
+    "dog" + 4 == "dog4";//true
+    4 + "4" == 44; //true
+    4 + 4 == 8; //true
+    4 + "4" == 8; //true
+    
+    a = "12";
+    b = "23";
+    console.log(a+b);//1223
+    console.log(parseInt(a) + parseInt(b)); //35
+    c = 12.34;
+    console.log(parseInt(c)); //12.
+    console.log(parseFloat(c)); //12.34
+*/
+
+/*
+        console.log(a);
+        var a = 5;
+*/
+
+/*
+  function f() {
+    // var b;
+    if (3 > 2)
+    {
+        var b = 3 ; //b = 3;
+    }
+    console.log(b);
+}
+
+f();
+
+*/
+/**
+function f() {
+ *! //nem hozza felulre minta var-t ezért ez hibát ad ki
+    if (3 > 2)
+    {
+        let b = 3 ; 
+    }
+    console.log(b);
+}
+
+f();
+
+// let vagy const optimalizálja a memoria használatot
+
+*/
+
+/*----------------------------------------2.óra---------------------------------------------------------*/
+
+/*
+let a = prompt("kérek egy számot: ", 1)
+console.log(a*2)
+
+console.log(Math.random()*10)
+console.log(Math.floor(Math.random()*10))
+console.log(Math.floor(Math.random()*100)+100)
+*/
+/**
+let kezd = 20
+let db = 10
+
+*! console.log(Math.floor(Math.random()*db)+kezd)
+*/
+/*
+let a = prompt("mi a neved?");
+console.log("szia " + a + " !");
+console.log(`szia ${a} !`); // ALT Gr + 7
+*/
+/**
+let a = prompt('a: ');
+let b = prompt('b: ');
+
+*? console.log(`Kerület: ${parseInt(a)*2+parseInt(a)*2} Terület: ${parseInt(a)* parseInt(b)}`);
+*/
+
+ //   console.log(Math.floor(Math.random()*91)+1)
+/*
+ let ora = prompt("ora: ");
+ let perc = prompt("perc: ");
+ let mp   = prompt("mp: ");
+
+ console.log((parseInt(ora)*60*60)+(parseInt(perc)*60)+parseInt(mp));
+*/
+/**
+*! let a = console.log(parseFloat((Math.random()*10).toFixed(2)))
+** Két tizedes jegyig
+*/
+/**
+    let a = 0;
+    if (a > 0)
+    {
+        console.log("+");
+    }
+    else if (a == 0)
+    {
+        console.log("0");
+    }
+    else
+    {
+        console.log("-");
+    }
+
+    if (a > 0) console.log("+");
+    else if (a == 0) console.log("0");
+    else console.log("-");
+*/
+/**
+    let nap = 5;
+    let napNev = "";
+ ** switch (nap)
+    {
+    case 1: 
+        napNev = "hetfo"; 
+        break;
+    case 2: 
+        napNev = "kedd"; 
+        break;
+    case 3: 
+        napNev = "szerda"; 
+        break;
+    case 4: 
+        napNev = "csutortok"; 
+        break;
+    case 5: 
+        napNev = "pentek"; 
+        break;
+    case 6: 
+        napNev = "szombat"; 
+        break;
+    case 7: 
+        napNev = "vasarnap"; 
+        break;
+    default:
+        napNev = "Ismeretlen"; 
+
+    }
+
+    console.log(napNev);
+*/
+/*
+let szam1 = prompt("1: ");
+let szam2 = prompt("2: ");
+
+if      (szam1 >  szam2)  console.log(`${szam1} > ${szam2}`);
+else if (szam2 == szam1)  console.log(`${szam1}= ${szam2}`);
+else                      console.log(`${szam1} < ${szam2}`)
+*/
+/*
+let tipp = prompt("fej vagy iras: ");
+let kod = 0;
+if (tipp = "fej")
+{
+    kod = 0
+}
+else{
+    kod = 1
+}
+
+let dobas = Math.floor(Math.random()*2)
+let dobott = dobas == 0 ? "fej": "iras";
+if(kod == dobas)
+{
+console.log("Nyert")
+}
+else
+{
+    console.log("Vesztett")
+}
+*/
+/**
+**Általában elemek indexelésére használjuk
+for (let i = 0; i<=5; i++) //csak a blokkon belul elő váltzo
+{
+    console.log(i);
+}
+*/
+/**
+ *! Megszámolható
+ * * kulcs:érték -nél ezt lehet használni
+let person = {name: "Béla", age:24, mail: 'bela@email.hu'};
+
+for ( key in person) {
+    console.log(key+' = ' + person[key]);
+}
+*/
+/**
+let cars = ['BMW','Suzki','Audi']
+
+for (car in cars) {
+    console.log(cars[car]);
+}
+**mert az indexediket irja ki
+*/
+/**
+ * !bejárható
+let cars = ['BMW','Suzki','Audi']
+for (car of cars)
+{
+    console.log(car)
+}
+*/
+/*
+let i = 1;
+while (i <=5)
+{
+    console.log(i);
+    i++;
+}
+*/
+/*
+let i = 0;
+do{
+    console.log(i);
+    i++;
+} while( i <= 5);
+*/
+/*
+let i = 0;
+while(true){
+    i++;
+    if (i > 5){
+        break;
+    }
+    console.log(i);
+}
+*/
+/*
+let i = 0;
+while(i < 10){
+    i++;
+    if (i % 2 == 1){
+        continue;
+    }
+    console.log(i);
+}
+*/
+/*
+let N = parseInt(prompt("Add meg a szamot: "));
+let a = 0;
+
+for (i = 0; i <= N; i++)
+{
+        a += i;
+}
+    console.log(a);
+*/
+/*---------------------------------------------------Stringek----------------*/
+/*
+let s = "karakterlánc";
+console.log(s);
+ console.log(s.length);//karakterlánc hossza
+*/
+/*
+ let v1 = "Tanulj";
+ let v2 = "JavaScript-et"
+
+ let s = v1.concat(" - ", v2) // mivel fűzze össze, mit 
+  console.log(s)
+
+*/
+/*
+let v1 = "Tanulj";
+ let v2 = "JavaScript-et"
+
+  console.log(v2.charAt(7))// adott indexű elem
+  console.log(v2.charCodeAt(7)) // a karakter kódját adja vissa i = 105
+
+  */
+/*
+  let s = "Hello vilag"
+  console.log(s.endsWith("Hello"))// hello-val vegzodik?
+  console.log(s.startsWith("Hello"))// hello-val kezdodik?
+*/
+
+/*
+console.log(String.fromCharCode(65,108,109,97)) //adott kodu betuket adja vissza
+
+let s = " az alma nemesik messze a fajatol"
+console.log(s.includes("alma"))         // megnézi hogy az "alma" megtalálhato e a stringben
+console.log(s.includes("alma", 7));    // a 7. értéktől kezd el vizsgálni 
+console.log(s.indexOf("alma"));       // annak a karakternek a kezdo értéke ahonnan kezdve a keresett string megtalálhato
+console.log(s.indexOf("a", 7));      // hetedik karaktertől kezdve keres, hol találja meg a 7-tol az elso "a" betut
+console.log(s.lastIndexOf("a"));    //hatulrol keresi az elso "a" betut elorol indexelve
+console.log(s.lastIndexOf("a",7)); // hatulrol a 7. tol keresi az elso "a" betut elorol indexel
+*/
+/*
+let s = "10";
+
+console.log(s.padEnd(5, "0"))
+console.log(s.padStart(5, "0"))
+
+*/
+/*
+let s = "la";
+
+console.log(s.repeat(5)) //tobbszorozes
+*/
+
+/*
+let s = "a kedvenc nyelvem a html és a html"
+
+console.log(s)
+
+let uj_s = s.replace("html", "JS") //kicseréli a html-t js-re de csak az elso elofordulast
+console.log(uj_s)
+
+ uj_s = s.replaceAll("html", "JS") //kicseréli az osszes html-t js-re 
+ console.log(uj_s)
+
+*/
+
+/*
+let s = "JavaScript";
+console.log(s.slice(3,6)) // vissza adja a 3,4,5 karakterét
+
+console.log(s.slice(4)) // vissza adja a 4. tol az osszes karaktert
+console.log(s.slice(-6)) // vissza adja haturol a -6 tol az osszes karaktert a -6ot is bele értve
+console.log(s.slice(-7,-4)) // vissza adja haturol a -7 tol -4iga  karaktert 
+
+console.log(s.substring(2,7))// vissza adja a 2-7ig 
+console.log(s.substr(3,3))// melyik karaktertol mennyit adjon vissza 3. indextol 3 db
+*/
+
+//a slice nem tud negativ értéket kezelni hanem 0-tol fogja 
+
+/*
+let v = "A javascript egy szkriptnyelv";
+
+let szavak = v.split(' ');
+
+for (szo of szavak)
+{
+    console.log(szo);
+}
+
+*/
+/*
+console.log("javascript".toUpperCase()) //teljes nagy betu
+console.log("JAVASCRIPT".toLowerCase()) // teljes kisbetu
+*/
+/*
+console.log("          J A V  AS    C  RIPT          ".trim()) 
+*/
+/*
+let s = "JavaScript"
+
+for(let i=0; i< s.length; i++)
+{
+    console.log(s[i])
+}
+
+for (betu of s )
+{
+    console.log(betu)
+}
+
+*/
+
+
+/**
+ *?-----------------------------------------------Feladat-----------------------------------------------*/
+/*
+let TeljesNev = prompt("Kérem a teljes neved: ")
+let szokoz = TeljesNev.indexOf(" "); 
+
+console.log(`Hi ${TeljesNev.slice(szokoz)}`) 
+*/
+/**
+ * !Ez jobb megoldás
+let TeljesNev = prompt("Kérem a teljes neved: ")
+keresztNev = TeljesNev.split(' ')
+console.log(`Hi ${keresztNev[1]}`) 
+*/
+/*
+let szo = prompt("Kérem a szót: ");
+let db = 0;
+for (betu of szo.toLowerCase())
+{
+    if( betu == "a") db++;
+}
+
+console.log(`A "${szo}" szóban ${db}db "a" betű van`)
+*/
+/**
+ *!Palindom mondat ellenorzese (oda vissza ugyanaz)!!!
+*/
+/*
+let mondat = prompt("Kérem a mondatot: ").toLowerCase()
+let egybemondat = mondat.replaceAll(" ", "");
+let s2 = "";
+
+for (let i = )
+
+if (strRev =egybemondat)
+{
+    console.log("Palindrom")
+}
+else{
+    console.log("Nem palindrom")
+
+}
+*/
+/**
+ *?-----------------------------------------------Tömbök-----------------------------------------------*/
+
+    
+/*
+    let nyelvek = [
+    'HTML',
+    'CSS',
+    'JS'
+    ];
+
+    console.log(nyelvek);
+*/
+/*
+    let nyelvek = []
+        nyelvek[0] = 'HTML';
+        nyelvek[1] = 'CSS';
+        nyelvek[2] = 'JS';
+
+    console.log(nyelvek);
+*/
+/*
+    let nyelvek = new Array['html', 'css', 'js']
+*/
+/*
+let nyelvek = [
+    'HTML',
+    'CSS',
+    'JS'
+    ];
+
+    console.log(nyelvek[0])
+    console.log(nyelvek[1])
+    console.log(nyelvek[2])
+*/
+
+/*
+let nyelvek = [
+    'HTML',
+    'CSS',
+    'JS'
+    ];
+
+for (e of nyelvek)
+{
+    console.log(e)
+}
+
+*/
+/*
+let nyelvek = [
+    'HTML',
+    'CSS',
+    'JS'
+    ];
+
+    console.log(`Módosítás elött:${nyelvek[1]}`)
+    nyelvek[1] ='php'
+    console.log(`Módosítás után:${nyelvek[1]}`)
+
+
+console.log(nyelvek)
+nyelvek.push('C#') //tömb végére teszi hozzá
+console.log(nyelvek)
+
+console.log(nyelvek)
+nyelvek[nyelvek.length] //tömb végére teszi hozzá ugyan úgy (.lenght a  lista hossza)
+console.log(nyelvek)
+
+
+
+console.log(nyelvek)
+nyelvek.pop('C#') //tömb végéről törli ki az utolso elemet
+console.log(nyelvek)
+
+console.log(nyelvek)
+delete nyelvek[1] // nem ajánlott mert üres helyet hagy a helyén de azt az indexet törli ami meg van adva
+console.log(nyelvek)
+
+*/
+/*
+let tomb = []
+
+tomb['a'] = 100;
+
+console.log(tomb['a']) //mint index
+console.log(tomb.a) //asszociativ tömb
+*/
+/*
+let tomb= [
+    [1,2,3,4],
+    [4,5,6,7],
+    [9,5,9,8],
+]
+
+console.log(tomb)
+
+let matrix = ""
+for(sor of tomb)
+{
+    for (oszlop of sor)
+    {
+        matrix += oszlop +' ';//console.log(oszlop) is lehetett volna
+    }
+    matrix += '\n'
+}
+
+console.log(matrix)
+
+
+*/
+
+/*
+let autok = ['Audi', 'BYD', 'Mercedes', 'Tesla' ]
+
+console.log(autok.at(2)) // vissza adja a 2es indexű elemet
+
+console.log(autok.at(-3)) // vissza adja a 3es indexű elemet a hátuljárol 1 töl számol nem 0tol
+
+let buszok =['Setra', 'Neoplan','Man']
+let traktor = "Johndeer"
+let jarmuvek = autok.concat(buszok, traktor)
+
+console.log(jarmuvek)
+*/
+/*
+let szamok = [6,8,2,15,25,75] // ha a sorban nincs 6 nál kissebb akkor true
+
+console.log(szamok.every(nagyobb))
+
+function nagyobb(szam){
+    return szam > 6;
+}
+
+let autok = ['Audi', 'BYD', 'BMW', 'Mercedes', 'Tesla' ]
+
+autok.fill('Trabant') //összes elem trabant lesz
+console.log(autok)
+autok.fill('Trabant', 2, 4) //2-4ig cseréli ki
+console.log(autok)
+/**
+ *!Ezek az eredeti tömb elemeit írják felül
+*/
+/*
+
+let szamok = [4,8,2,15,5,75]; // vissza ad egy tömböt amiben a 6nál kissebbek vannak
+console.log(szamok.filter(nagyobb));
+
+function nagyobb(szam){
+    return szam > 6;
+}
+
+
+console.log(szamok.find(nagyobb)) ;//első igaz elem értéke
+console.log(szamok.findIndex(nagyobb));  // első igaz elem indexe
+
+//ha nincs benne megfelelő érték akkor a findIndex -1 el tér vissza
+
+//callback fugveny
+function nagyobb(szam){
+    return szam > 6;
+}
+
+let kimenet = '';
+
+szamok.forEach(duplaz)
+
+function duplaz(ertek, index){
+    kimenet += index + ": " + ertek * 2 +"\n"
+}
+
+console.log(kimenet)
+*/
+
+/*
+let szöveg = 'ABCDEFGHI'
+let betuk = Array.from(szöveg); // végig megy a szövegen és tömbé alakítja
+console.log(betuk);
+
+let autok = ['Audi', 'BYD', 'BMW', 'Mercedes', 'Tesla', 'BYD' ]
+
+console.log(autok.indexOf("BYD")) // keresi az elso byd-t
+console.log(autok.indexOf("Audi" , 2)) // keresi az elso byd-t de a 3.elemtől és nem találja -1
+
+console.log(autok.lastIndexOf("BYD")) // az utolso elemtöl keresi
+console.log(autok.lastIndexOf("BYD" , 2))
+
+
+
+console.log(autok.join(" - "))
+*/
+/*
+let szamok = [4,8,2,15,5,75];
+console.log(szamok)
+
+let gyok = szamok.map(Math.sqrt)
+console.log(gyok)
+console.log(szamok.map(duplaz))
+
+function duplaz(szam){
+    return szam *2 
+}
+*/
+/*
+let szamok = [4,8,2,15,5,75];
+szamok.push(2);
+szamok.push(45, 10);
+console.log(szamok)
+console.log(szamok.pop())
+console.log(szamok)
+
+console.log(szamok)
+szamok.reverse();
+console.log(szamok)
+
+console.log(szamok)
+console.log(szamok.shift()) //az első elemet törli ki
+console.log(szamok)
+console.log(szamok.unshift(7, 45)) // 7, 43 at be rakja a tömb elejére
+console.log(szamok)
+
+*/
+/*
+
+let autok = ['Audi', 'BYD', 'BMW', 'Mercedes', 'Tesla']
+
+console.log(autok.slice(1,3)) //1-3ig ki másolja az elemeket 
+console.log(autok.slice(-3,-1)) //működik negatív indexekkel is -3tól -1ig
+*/
+/*
+let szamok = [4,8,2,15,5,75];
+
+
+console.log(szamok.some(nagyobb)) //addig ameddig nem talál igaz értéket
+function nagyobb(szam)
+{
+    return szam > 12
+}
+*/
+
+/*
+let autok = ['Audi','BMW', 'Mercedes', 'Tesla','BYD']
+
+console.log(autok) //sorba rakja az autokat
+autok.sort();
+console.log(autok)
+
+*/
+/*
+
+let szamok = [4,8,2,15,5,75];
+
+szamok.sort(function(a, b){return a-b}); //sorba rakja a számokat
+
+console.log(szamok)
+
+*/
+/**
+ *? --------------------Feladatok---------------------------------------------------------------*/
+/*
+let dobasok = [0,0,0,0,0,0]
+ for(let i = 0; i < 100; i++)
+ {
+    dobasok[Math.floor(Math.random() * 6)]++
+ }
+
+
+
+ let szum = 0
+for(let i = 0; i < dobasok.length; i++ ){
+    szum += dobasok[i] * (i + 1)
+    console.log(`${i+1}: ${dobasok[i]} `)
+}
+
+let atlag = szum / 100
+db = 0;
+for (let i = Math.ceil(atlag - 1); i< dobasok.length; i++ )
+{
+    db += dobasok[i];
+} 
+
+console.log(`Átlag feletti dobások: ${db}`)
+
+
+*/
+/**
+ * ! háttér szín be állítása */
+document.body.style.backgroundColor = "black";
+
+/**
+ * ?-------------------------Halmazok---------------------------------------------*/
+/*
+
+let betuk = new  Set(['a', 'b', 'c', 'd', 'e']); //halmaz 
+betuk.add('f');
+let a = "g"
+betuk.add(a);//hozzá adja a betut
+betuk.add('h');
+betuk.add('h'); // csak egyszer adja hozza
+
+console.log(betuk);
+
+betuk.forEach(function(ertek){ //végigmegy az elemein és ki írja
+    console.log(ertek)
+});
+
+for (elem of betuk.values()){ //végigmegy az elemein és ki írja
+    console.log(elem)
+}
+
+if(betuk.has('c')){ // .has benne van e azt ellenőrzi
+    console.log('Ez az elem a halmazban van')
+}
+
+console.log(betuk.size()); //vissza adja a halmaz hosszat
+*/
+/**
+ * ?-------------------------Feladat---------------------------------------------*/
+/**
+let szamok = new Set()
+
+while( szamok.size != 5){
+    szamok.add(Math.floor(Math.random()*90)+1)
+}
+console.log(szamok)
+
+console.log(Array.from(szamok).sort(function(a,b){return a-b}));
+
+*/
+/**
+let szamok = new Set()
+while( szamok.size != 5){
+    szamok.add(Math.floor(Math.random()*10)+1)
+}
+
+let osszeg = 0
+for(e of szamok){
+    osszeg = osszeg + e
+}
+
+console.log(szamok)
+console.log(osszeg)
+*/
+/**
+let a = new Set()
+let b = new Set()
+
+while( a.size != 5){
+    a.add(Math.floor(Math.random()*10)+1)
+}
+while( b.size != 5){
+    b.add(Math.floor(Math.random()*10)+1)
+}
+
+//Egyesítése
+let egyesites = new Set()
+for (e of a){
+    egyesites.add(e)
+}
+for (e of b){
+    egyesites.add(e)
+}
+console.log(egyesites)
+*/
+/**
+ * ! --------másik megoldás*/
+/**
+ console.log(a);
+ console.log(b);
+
+let unio = new Set([...a,...b])
+
+console.log(unio);
+
+
+*!metszet
+let metszet = new Set([...a].filter(x=>b.has(a)))
+console.log(metszet)
+
+//kulonbseg
+let kulonbseg = new Set([...a].filter(function(x){
+    return !b.has(x)
+}));
+
+console.log(kulonbseg)
+*/
+
+/**
+ * ?-------------------------MAP---------------------------------------------*/
+/*
+let aruk = new Map([
+    ['alma', 300],
+    ['paradicsom', 500],
+    ['répa', 200],
+]);
+
+aruk.set('ananász', 1500); // uj elem hozzá adása
+aruk.set('répa', 400); // modositas
+console.log(aruk)
+
+console.log(aruk.get('alma')) //kulcs alapján vissza adja az értéket
+
+console.log(aruk.size) //MAP hosza
+console.log(aruk)
+aruk.delete('alma') //kulcs alapján törlés
+console.log(aruk)
+console.log(aruk.has('répa')) //van e
+aruk.forEach(function(value,key){ //kulcs érték pár ki írása
+    console.log(key + " " + value )
+})
+
+for (aru of aruk.entries()) //vissza adja egy listába a kulcs érték párokat
+ {
+    console.log(aru)
+ }
+
+ for (aru of aruk.keys()) // csak a kulcsokat adja vissza
+ {
+    console.log(aru)
+ }
+
+
+ for (aru of aruk.values()) // csak az értékeket adja vissza
+ {
+    console.log(aru)
+}
+*/
+/**
+ * ?-------------------------Feladat---------------------------------------------*/
+/*
+let honapok = new Map([
+    ['januar',    31],
+    ['februar',   28],
+    ['marcius',   31],
+    ['april',     30],
+    ['majus',     31],
+    ['junius',    30],
+    ['julius',    31],
+    ['augustus',  31],
+    ['september', 30],
+    ['oktober',   31],
+    ['november',  30],
+    ['december',  31]
+]);
+
+let db = 0
+for (honap of honapok.values()) // hány darab olyan van ami 31 napos
+ {
+     if(honap == 31) db++
+}
+console.log(db)
+
+
+
+honapok.forEach(function(value, key) { //ki írja a 30 naposokat
+    if(value == 30){
+        console.log(key)
+    }
+})
+
+*/
+/*
+let tomb = [];
+
+while (tomb.length != 100)
+{
+    let random =(Math.floor(Math.random() * 100)+1); 
+    if(random > 50)
+    {
+        tomb.push(50 - random);
+    }
+    else{
+        tomb.push(random)
+    }
+}
+console.log(tomb)
+let ind = 0;
+for (let i = 0; i <= tomb.length; i++)
+{
+    if ( tomb[i] == (Math.max(...tomb))){
+        ind = i;
+    }
+}
+
+console.log(Math.max(...tomb))
+console.log(ind)
+
+
+let osszeg = 0
+
+for(e of tomb)
+{
+    osszeg = osszeg + e
+}
+
+console.log(osszeg)
+
+
+let paros = 0
+let paratlan = 0
+
+for(e of tomb)
+{
+    if(e % 2 == 0)
+    {
+        paros++
+    }
+    else{
+        paratlan++
+    }
+}
+
+console.log(paros)
+console.log(paratlan)
+
+
+let van = false;
+
+for(e of tomb)
+{
+    if(e % 7 == 0)
+    {
+        van = true;
+        break;
+    }
+}
+
+if(van) console.log('van');
+else  console.log('nincs');
+
+van = false;
+for (let i = 1; i <= tomb.length-1; i++)
+{
+    if ( tomb[i-1] < 0 && tomb[i+1] < 0){
+        van = true;
+        break;
+        
+    }
+}
+if(van) console.log('van');
+else  console.log('nincs'); 
+
+van = false;
+for (let i = 1; i <= tomb.length-1; i++)
+{
+    if ( tomb[i-1] + tomb[i+1] < tomb[i]){
+        van = true;
+        break;
+        
+    }
+}
+if(van) console.log('van');
+else  console.log('nincs'); 
+
+*/
+
+/**
+ *?-------------------------------Fügvények--------------------------------------------------------*/
+/*
+ function add(a, b)
+ {
+    return a + b;
+ }
+*/
+/*
+let add = function addFunction(a,b)
+{
+    return a+b;
+}
+*/
+/*
+let add = function(a,b) {return a+b;}
+*/
+
+/**
+**legjobb megoldás, de csak akkor hagyható el ha egy soros
+let add = (a,b) => a + b;
+
+ console.log(add(3,2))
+*/
+/*
+let udv = () => "Hello";
+console.log( udv());
+*/
+
+/**
+ * !    X--Nem ajánlott a használata--X
+let add  = Function("a", "b", "return a + b");
+console.log(add(3,2))
+*/
+/**
+ ** Ön magát meghívó fügvény (van más neve is)
+ (function (){
+    let nev = "Elemér"
+        udv = function(){
+            return "Szia "+ nev + " vagyok !";
+        }
+        console.log(udv());
+ }());
+*/
+/*
+
+let person = {name: "Pista", age: 45}
+
+let i = 5;
+
+function f(person_f, i_f) // fügvény változoi nem ugyan azok a globalis valtozok 
+{
+    person_f.name = "sanyi";
+    i_f = 8
+}
+
+console.log(person.name);
+console.log(i);
+f(person, i)
+console.log(person.name);
+console.log(i);
+// objektum értéke meg változik de az i értéke nem
+
+*/
+/*
+let person = {name: "Pista", age: 45}
+
+let i = 5;
+
+function f(person_f) // fügvény változoi nem ugyan azok a globalis valtozok 
+{
+    person_f = {name: "Pista", age: 45};
+}
+
+
+// cak  az értéket lehet megváltoztatni de magát a teljes objektumot nem 
+console.log(person);
+f(person)
+console.log(person);
+
+*/
+
+
+/*
+function szemely( nev = "Elemér", lakhely = {varos : "Pajkaszeg"} ){
+    return nev + " lakhelye: " + lakhely.varos}
+
+console.log(szemely()); // nincs paraméter alapértelmezett
+console.log("Béla");    // megadta akkor a megadott + az alapértelmezett
+
+
+*/
+/*
+function tanulo(nev, ...jegyek){
+    return nev + ' jegyek ' + jegyek.join(', ');
+}
+
+console.log(tanulo('Béla', 5,4,5,2,4,2,2,5,5,3,4))
+*/
+
+/**
+    *! nem javasolt de használható megkeresi a max értéket egy sorozatban
+function findmax(){
+    let max = -Infinity
+    for (let i = 0; i < arguments.length; i++){
+        let actualArg = arguments[i];
+        if ( actualArg > max)
+        {
+            max = actualArg;
+        }
+    }
+    return max;
+}
+
+console.log(findmax(4,8,6,2,4,7,25,26,47,84,14,22,44))
+
+*/
+
+/**
+ ** később is létre lehet hozni őket
+console.log(add(3,2));
+
+function add(a, b)
+{
+    return a+b;
+}
+*/
+
+/**
+ ** CALL BACK-------
+
+
+let add = function(a, b){
+    return a + b;
+}
+
+let multiply = function(a, b){
+    return a * b;
+}
+
+function perform(a, b, operation){
+    return operation(a,b)
+}
+
+console.log(perform(3,2, add))
+console.log(perform(3,2, multiply)) // megkapja a két számot és végrehajtja a füvgénnyel
+ */
+/**
+ ** Call back fügvény ugyan ugy működik csak névtelen fügvénnyel
+ function perform(a, b, operation){
+    return operation(a,b)
+}
+
+
+console.log(perform(3,2, function(a,b){
+    return a + b;
+}))
+
+console.log(perform(3,2, function(a,b){
+    return a * b;
+}))
+*/
+/**
+ * *kor kiszamolo 
+let evek = [1963,1954,2012,2008,1988,1993]
+
+function tombMuvelet(tomb, fvg)
+{
+    let eredmeny = [];
+    for (let i = 0; i < tomb.length; i++)
+    {
+        eredmeny.push(fvg(tomb[i]));
+    }
+    return eredmeny;
+}
+
+function korSzamitas(elem){
+    return 2024 - elem;
+}
+
+let korok = tombMuvelet(evek, korSzamitas)
+
+console.log(korok)
+
+*/
+
+/**
+ * * Bonyolult összeagyazott fügvény 
+
+function interjuKerdes(foglalkozas)
+{
+    if ( foglalkozas = "tanar")
+    {
+        return function(nev)
+        {
+            console.log(nev + " meg tudna mondani hogy milyen tantárgyakat tanít ")
+        }
+    }
+    else if (foglalkozas = "elado")
+    {
+        return function(nev)
+        {
+            console.log(nev + " hogyan kezelnek egty vevői reklamációt")
+        } 
+    }
+    else{
+        return function(nev)
+        {
+            console.log("Mi a foglalkozasa kedves " + nev +" ?" )
+        }
+    }
+}
+
+
+let kerdesTanaroknak = interjuKerdes("tanár");
+kerdesTanaroknak = interjuKerdes("Pál");
+
+let kerdesEladoknak = interjuKerdes("elado");
+kerdesEladoknak = interjuKerdes("Béla");
+
+
+interjuKerdes("tanar")("Péter");
+interjuKerdes("elado")("Tamás");
+*/
+
+/**
+ * ?---------------------------------------------------------------------------------------------------------*/
+/*
+
+function nyugdij (ev){
+    let szoveg = "nyugdijig hátralévő évek száma: ";
+    return function (szuletesi_ev){
+        let datumObjektum = new Date();
+        let aktualisEv = datumObjektum.getFullYear();
+        let kor = aktualisEv - szuletesi_ev;
+        console.log(szoveg + (ev - kor));
+    }
+}
+
+
+let nyugdijazasUSA = nyugdij(66);
+    nyugdijazasUSA(2006)
+
+
+*/
+/*
+function MyHello(name){
+    this.name = name;
+    this.sayHello = function(){
+        return `Hello, ${this.name}!`;
+    }
+}
+
+let myhello = new MyHello("Béla")
+console.log(myhello.sayHello());
+*/
+
+
+/*
+
+function Person(fName, lName, age){
+    this.fName = fName;
+    this.lName = lName;
+    this.age   = age;
+    this.fullName = function(){
+        return this.fName + " " + this.lName;
+    }
+}
+
+let p1 = new Person( "Kvák", "Aladár", 45)
+let p2 = new Person( "Nagy", "Nimród", 53)
+
+console.log(p1.fullName.call(p2))
+console.log(p1.fullName.apply(p2))
+
+
+*/
+
+
+/*
+
+
+const obj = {
+
+    name: 'Example',
+    logName: function(){
+        console.log(this.name)
+    }
+};
+
+const logNameFunction = obj.logName.bind(obj);
+logNameFunction();
+
+
+
+
+
+*/
+/*
+
+const obj = {
+    name : 'Example',
+    logName : function(){
+        setTimeout(function(){
+            console.log(this.name)
+    }.bind(this), 1000)
+    }
+};
+
+obj.logName();
+
+
+*/
+/*
+function* fibonaci(){
+    let n1 = 0;
+    let n2 = 1;
+    while (true)
+    {
+        yield n1;
+        let sum = n1 + n2;
+        n1 = n2;
+        n2 = sum;
+    }
+}
+
+const fib = fibonaci();
+
+for(i = 0; i < 10; i++)
+{
+    console.log(fib.next().value);
+}
+*/
+/*
+function fibonacci(n){
+    if ( n < 2 )
+    {
+        return n
+    }
+    else{
+        return fibonacci( n - 1 ) + fibonacci( n - 2 )
+    }
+}
+
+console.log(fibonacci(8))
+*/
+/**
+ * ?---------------------------------------------Gyakorlo feladat*/
+/*
+ function factorialize(num) {
+  let result = num;
+  if (num == 0 || num == 1) 
+    return 1; 
+  while (num > 1) { 
+    num--;
+    result *= num;
+  }
+  return result;
+}
+
+console.log(factorialize(170));
+*/
+
+/*
+function timecalc(szam){
+    let nulla = ""
+    if (szam % 60 < 10){
+        nulla = 0
+    }
+    return `${Math.floor(szam / 60)} : ${nulla}${Math.floor(szam % 60)}`
+}
+
+
+console.log(timecalc(90))
+console.log(timecalc(456))
+console.log(timecalc(424))
+*/
+/**
+ * ?------------------------------Primn stam vizsgalat-------*/
+/*
+function prime(n)
+{
+
+  if (n==1)
+  {
+    return false;
+  }
+  else if(n == 2)
+  {
+    return true;
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x == 0)
+      {
+        return false;
+      }
+    }
+    return true;  
+  }
+}
+
+console.log(test_prime(37));
+
+*/
+
+
+/**
+ * ? Hány darab a bertű?*/
+
+/*
+ function dba(text)
+ {  let db = 0;
+    for(f of text){
+        if (f == "a" || f == "A")
+        {
+            db++;
+        }
+    }
+    return db;
+ }
+
+ console.log(dba("AlmafA Alatt aszTal"))
+*/
+
+
+
+/**
+ * ?------------------------------------Gyakorlás-----------------*/
+
+/*
+ class Harcos{
+    constructor(nev, eletero, harciero){
+        this.nev = nev;
+        this.eletero = eletero;
+        this.harciero = harciero;
+    }
+
+    sebzodik(h){
+        this.eletero -= h;
+    }
+
+    harcol(h){
+       // h.eletero -= this.harciero;
+       // this.eletero -= h.harciero;
+        h.sebzodik(this.harciero);
+        this.sebzodik(h.harciero);
+        if(h.eletero < 1 || this.eletero < 1)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    getEletero(){
+        return this.eletero;
+    }
+
+    getHarciero(){
+        return this.harciero;
+    }
+
+    kiir(){
+        console.log(`Nev: ${this.nev} Harciero:  ${this.harciero} Életerő:  ${this.eletero}`)
+    }
+
+}
+
+
+let harcos1 = new Harcos("Spartacus",200,30);
+let harcos2 = new Harcos("Herkules",120,40);
+
+
+let kor = 1;
+
+while(!harcos1.harcol(harcos2)){
+    console.log(`${kor}. kör: `);
+    harcos1.kiir();
+    harcos2.kiir();
+    kor++;
+}
+
+if(harcos1.getEletero() < 1 && harcos2.getEletero() < 1)
+{
+    console.log("mindketten veszítettek");
+}
+else if(harcos1.getEletero() < 1){
+    console.log("Nyertes " + harcos2.nev);
+}
+else{
+    console.log("Nyertes " + harcos1.nev);
+
+}
+
+
+*/
+
+/**
+ * 
+*/
+/*
+class Haromszog{
+    constructor(ax, ay, bx, by, cx, cy){
+        this.ax = ax;
+        this.ay = ay;
+        this.bx = bx;
+        this.by = by;
+        this.cx = cx;
+        this.cy = cy;
+
+        this.a = Math.sqrt((bx-ax)**2+(by-ay)**2)
+        this.b =Math.sqrt((cx-bx)**2+(cy-by)**2)
+        this.c = Math.sqrt((cx-ax)**2+(cy-ay)**2)
+    }
+    egyenloszaru(ax, ay, bx, by, cx, cy){
+
+        if(this.a == this.b || this.c == this.b || this.a == this.c )
+        {
+            return true
+        }
+        return false
+    }
+    szabalyos(ax, ay, bx, by, cx, cy){
+
+        if(this.a == this.b && this.c == this.b && this.a == this.c )
+        {
+            return true
+        }
+        return false
+    }
+
+    kerulet(ax, ay, bx, by, cx, cy)
+    {
+
+        return this.a+this.b+this.c
+    }
+
+    terulet(ax, ay, bx, by, cx, cy){
+        let s = (this.a+this.b+this.c)/2
+        return Math.sqrt(s*(s-this.a)*(s-this.b)*(s-this.c))
+    }
+
+    kiir(ax, ay, bx, by, cx, cy){
+
+        console.log(this.terulet(ax, ay, bx, by, cx, cy));
+        console.log(this.kerulet(ax, ay, bx, by, cx, cy));
+        if(this.egyenloszaru)
+        {
+            console.log("egyenlőszárú");
+        }
+        else if(this.egyenloszaru)
+        {
+            console.log("Szabályos");
+        }
+
+    }
+}
+
+let haromszog = new Haromszog(0,0,2,0,1,1);
+let haromszog1 = new Haromszog(8,2,11,13,2,6);
+let haromszog2 = new Haromszog(0,0,6,0,3,5);
+
+haromszog.kiir();
+haromszog1.kiir();
+haromszog2.kiir();
+
+*/
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

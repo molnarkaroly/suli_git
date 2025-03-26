@@ -1,0 +1,7 @@
+C:\Users\molnarkaroly\Downloads\241010_molnarkaroly\statisztika\bin\Debug\statisztika.exe.config
+C:\Users\molnarkaroly\Downloads\241010_molnarkaroly\statisztika\bin\Debug\statisztika.exe
+C:\Users\molnarkaroly\Downloads\241010_molnarkaroly\statisztika\bin\Debug\statisztika.pdb
+C:\Users\molnarkaroly\Downloads\241010_molnarkaroly\statisztika\obj\Debug\statisztika.csproj.AssemblyReference.cache
+C:\Users\molnarkaroly\Downloads\241010_molnarkaroly\statisztika\obj\Debug\statisztika.csproj.CoreCompileInputs.cache
+C:\Users\molnarkaroly\Downloads\241010_molnarkaroly\statisztika\obj\Debug\statisztika.exe
+C:\Users\molnarkaroly\Downloads\241010_molnarkaroly\statisztika\obj\Debug\statisztika.pdb

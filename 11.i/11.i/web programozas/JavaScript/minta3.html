@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+
+    table tr td{
+        border: 0.2px solid white;
+        width: 50px;
+        height: 50px; 
+        border-radius: 50%;   
+    }
+</style>
+<body>
+
+    
+    <table>
+        <tbody>
+            <thead>
+                <tr></tr>
+            </thead>
+        </tbody>
+    </table>
+
+    <script>
+    const X = 25;
+    const Y = 25;
+    let d = 1;
+    for (var i = 1; i < X; i++) {
+        const tbody = document.getElementsByTagName("tbody")[0];
+        const row = document.createElement("tr");
+            for (var j = 1; j < Y; j++) {
+                const col = document.createElement("td");
+                let CoLoR = "hsl(0,100%, " + (Math.abs( 8 - i)* 6 +20) + "%)";
+                if(i %2 == 0 && j %2 == 1){
+                    col.style.backgroundColor = CoLoR;
+                }
+                else if(i %2 == 1 && j % 2 == 0)
+                {
+                    col.style.backgroundColor = CoLoR;
+                }
+
+                console.log(CoLoR)
+                row.append(col);
+        
+            }
+    tbody.append(row);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+1.madaras feladat :>
+Madár(gyuruszam, faj, osztály, rend, alosutály, osztály, tagsagiszam, mikor, hol,)
+Szövtag(nev, mettol, meddig, lakcím, tagsagiszam)
+Feljegyzes(gyuruszam, tagsagiszam, mikor, hol)
+
+2. vasuti 
+állomás		(állomasnév, hely)
+vonat  		(vonatszám indul.allomas.nev vegallomas.nev vegallomas.mikor)
+megál		(vonatszam,  indul.allomas.nev megall.allomas.mikor vegallomas.mikor)
+
+
+3.feladat
+
+szinhaz(nev, cim)
+bemutasrakerul(szinhaz.nev, szinhaz.cim, mikor, darab, szerzo)
+
+

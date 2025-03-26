@@ -1,0 +1,23 @@
+{
+    "vezetekNev": "Kovács",
+    "keresztNev": "András",
+    "kor": 33,
+    "cim": {
+        "város": "New York",
+        "utcaHazszam": "2. utca 12",
+        "allam": "NY",
+        "iranyitoszam": "10021"
+    },
+    "telefonszam": 
+    [
+        {
+            "szam": "+1 123 456 7890",
+            "tipus": "otthoni"
+        },
+        {
+            "szam": "+36 70 123 4567",
+            "tipus": "ceges"
+        }
+    ]
+
+}

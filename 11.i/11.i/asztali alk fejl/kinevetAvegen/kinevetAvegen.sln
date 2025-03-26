@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kinevetAvegen", "kinevetAvegen.csproj", "{FCA0E449-6287-4229-B342-71B635F5583A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCA0E449-6287-4229-B342-71B635F5583A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA0E449-6287-4229-B342-71B635F5583A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA0E449-6287-4229-B342-71B635F5583A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA0E449-6287-4229-B342-71B635F5583A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EA25675-DC1D-40E0-9B88-B71F93C40FCC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2 @@
+SELECT SUM(kesz) + SUM(epul) + SUM(terv) FROM `palya`;
+

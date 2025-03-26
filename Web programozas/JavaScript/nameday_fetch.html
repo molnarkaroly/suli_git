@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+</head>
+<body>
+ <p id="valasz"></p>
+
+    <script>
+    /**Feladat 1
+     *     async function nevnapok(){
+            const response = await fetch('https://nameday.abalin.net/api/V1/today', {
+                method: 'POST',
+                headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                        },
+            //    body: JSON.stringify({'country': 'hu'})
+            });
+
+            const nevek = await response.json();
+            document.getElementById('valasz').innerHTML = JSON.stringify(nevek);
+        }
+        nevnapok();*/
+    
+  /**Feladat 2
+   *   
+    let downloadBtn = document.createElement('button');
+    downloadBtn.innerHTML = 'Adat készítés';
+    let abortBtn = document.createElement('button');
+    abortBtn.innerHTML = 'Abort';
+    document.body.appendChild(downloadBtn);
+    document.body.appendChild(abortBtn);
+    const controller = new AbortController();
+    const signal = controller.signal;
+
+    abortBtn.addEventListener('click', () => {
+        controller.abort();
+    });
+
+    downloadBtn.addEventListener('click', async () => {
+            try{
+                const response = await fetch('https://nameday.abalin.net/api/V1/today', {signal});
+                console.log(response);
+            }
+            catch(error){
+                console.log(error.message);
+            }
+        });
+        */
+
+
+/*
+
+async function nevnapok(){
+            const response = await fetch('https://nameday.abalin.net/api/V1/today', {
+                method: 'POST',
+                headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                        },
+                body: JSON.stringify({'country': 'hu', "timezone": "Europe/Budapest"})
+            });
+
+            const nevek = await response.json();
+            document.getElementById('valasz').innerHTML = JSON.stringify(nevek);
+        }
+        nevnapok();
+
+
+*/
+    </script>
+
+
+
+<script type="module">
+    import * as modul from "./import_example.js";
+    console.log(modul.add(2, 3));
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Űrlap</title>
+</head>
+<body>
+    <fieldset class="kozep"> <legend>Regisztráció adatok</legend>
+    <p><label for="">Teljes név:<input type="text" name="" id=""></label></p>
+    <p><label for="nev">Neve: <input type="text" name="name" id="nev" size="10"  ></label></p>
+    <p><label for="pass">Jelszó: <input type="password" name="pass" id="jelszó" ></label></p>
+    <p><label for="pass">Jelszó ismét: <input type="password" name="pass" id="jelszó" ></label></p>
+    <p><label for="date">Születési dátum <input type="date" name="date" id="dátum" ></label></p>
+    <p><label for="email">E-mail:<input type="email" name="email" id="emmail"></label></p>
+    <p><label for="nev">Felhasználói azonosító <input type="text" name="azonosito" id="azonosító"  placeholder="1234"  ></label></p>
+
+    </fieldset>
+
+    <p class="kozep">
+        <label for="végzetség">legnagyobb iskolai végzetség:
+          <select name="végzetség" id="végzetség" >
+            <option value="Egyéb" selected>egyéb</option>
+            <option value="általános" >általános</option>
+            <option value="közép">közép iskola</option>
+            <option value="egyetem">egyetem</option>
+          </select>
+        </label>
+      </p>
+
+      <p class="kozep">Nem: 
+<label for="Férfi">Férfi:<input type="radio" name="válasz" id="Férfi"  value="Férfi"></label>
+<label for="Nő">Nő<input type="radio" name="válasz" id="Nő" value="Nő"></label>
+<label for="Egyéb">Egyéb<input type="radio" name="válasz" id="Egyéb" value="Egyéb" checked ></label></p>
+
+<p class="kozep">Hobbik: 
+<label for="foto">Fotózás:<input type="checkbox" name="foto" id="foto" value="foto" >
+<label for="cook">Főzés<input type="checkbox" name="cook" id="cook" value="cook" >
+<label for="sorozat">Sorozatnézés:<input type="checkbox" name="sorozat" id="sorozat" value="sorozat" >
+</label></p>
+
+<p class="kozep" >Profilkép feltöltése<label for="file"><input type="file" name="file" id="file"></label></p>
+
+<p class="kozep" ><p> Bemutatkozás (max 200 karakter) 
+<textarea name="szöveg" size="200" id="szöveg" cols="30" rows="10" placeholder="szőveg" ></textarea></p>
+
+<p class="kozep"><input type="submit" value="adatok elküldése" id="gombok" >
+  <input type="reset" value="adatok törlése" id="gombok" >
+</p>
+
+</body>
+</html>

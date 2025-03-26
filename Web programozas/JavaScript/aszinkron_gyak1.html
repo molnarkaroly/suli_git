@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    
+    <input type="button"  onclick="gomb()">
+
+    <script>
+
+        const gomb = () => {
+
+        const azonositokLekerdezese = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("betöltés");
+                //reject("Valami Hiba");
+            }, 2000);
+        });
+
+        const receptLekeres = receptId => {
+            return new Promise((resolve, reject) => {
+                setTimeout((id) => 
+                    resolve(`${id}: ${recept.cim}`);
+                }, 1500, receptId);
+            });
+        };
+
+        const kategoriaLekeres = kategoria => {
+            return new Promise ((resolve, reject) => {
+                setTimeout(kat => {
+                    const levesek = [
+                    {cim: "Nyírségi gombócleves", kategoria: "Levesek"},
+                    {cim: "Borsóleves", kategoria: "Levesek"},
+                ];
+                resolve(levesek);
+                }, 1500, kategoria);
+            });
+        };
+
+
+        async function lekeres() {
+            try {
+                const azonositok = await azonositokLekerdezese;
+                console.log(azonositok);
+                const recept = await receptLekeres(azonositok[2]);
+                console.log(recept);
+                const kategoria = await kategoriaLekeres(recept.kategoria);
+                console.log(kategoria);
+            } catch (error) {
+                console.log(error.message);
+            }
+        };
+        
+        lekeres();
+    </script>
+</body>
+</html>

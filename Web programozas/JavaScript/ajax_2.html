@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajax</title>
+
+</head>
+<body>
+<!--https://nameday.abalin.net/docs/-->
+
+    <button type="button" onclick="LoadDoc()">Adat kérése</button>
+
+    <p id="demo"></p>
+    <p id="header"></p>
+    <p id="type"></p>
+
+    <script>
+    let lng = document.documentElement.lang;
+
+        function LoadDoc() {
+        let xhttp = new XMLHttpRequest();
+        
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                //document.getElementById("demo").innerHTML = this.responseText;
+                //document.getElementById("header").innerHTML = this.getAllResponseHeaders();
+                //document.getElementById("type").innerHTML = this.getResponseHeader("content-type");
+                const obj = JSON.parse(this.responseText);
+                document.getElementById("demo").innerHTML = obj.nameday.lng;
+            }
+        };
+
+
+
+        xhttp.open("POST", "https://nameday.abalin.net/api/V1/today", true);
+        xhttp.setRequestHeader("content-type", "application/json");
+        xhttp.setRequestHeader("Accept", "application/json");
+        xhttp.send(JSON.stringify({'country': `${lng}`}));
+
+    }
+
+    const orszagok = [
+  "at",
+  "bg",
+  "cz",
+  "de",
+  "dk",
+  "ee",
+  "es",
+  "fi",
+  "fr",
+  "gr",
+  "hr",
+  "hu",
+  "it",
+  "lt",
+  "lv",
+  "pl",
+  "ru",
+  "se",
+  "sk",
+  "us"
+];
+
+    fetch("https://nameday.abalin.net/api/V1/today", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+  },
+  body: JSON.stringify({ country: lng})
+})
+.then(response => response.json())
+.then(data => {
+  // Az országokon végigmenni
+  Object.keys(data.nameday).forEach(country => {
+    console.log(`Ország: ${country}`);
+    console.log(`Névnap: ${data.nameday[country]}`);
+    console.log(`---`);
+  });
+})
+.catch(error => console.error(error));
+
+    </script>
+</body>
+</html>

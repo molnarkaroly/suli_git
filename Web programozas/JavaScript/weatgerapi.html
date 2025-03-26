@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body onload="weather()">
+    <script>
+        document.head.insertAdjacentHTML('beforeend',
+          `<style>
+            p {
+              color: white;
+              font-size: 25px;
+            }
+            h1 {
+              color: white;
+              font-size: 30px;
+            }
+          </style>`);
+        const div = document.createElement('div');
+        div.style.position = 'absolute';
+        div.style.left = '50%';
+        div.style.top = '50%';
+        div.style.transform = 'translate(-50%, -50%)';
+        div.style.width = '500px';
+        div.style.height = '500px';
+        div.style.borderRadius = '25px';
+        div.style.background = "linear-gradient(to bottom right, red, yellow)";
+        document.body.appendChild(div);
+        
+        function weather() {
+          let api =  "http://api.weatherapi.com/v1/current.json?key=2dd90b18fa1340dab4d145208241403&q=Hungary&aqi=no";
+          fetch(api)
+            .then(response => response.json())
+            .then(data => {
+              console.log(data);
+              test = data.current.temp_c;
+                if (test < 10) {
+                  div.style.background = "linear-gradient(to bottom right, blue, cyan)";
+                  document.body.style.background = "linear-gradient(to bottom right, #1A202C, #2D3748)";
+                }
+                else if (test >= 10 && test <= 25) {
+                    div.style.background = "linear-gradient(to bottom right, green, lightgreen)";
+                    document.body.style.background = "linear-gradient(to bottom right, #2f753e, #54a454)";
+
+                }
+                else {
+                    div.style.background = "linear-gradient(to bottom right, orange, lightorange)";
+                    document.body.style.background = "linear-gradient(to bottom right, #1A202C, #2D3748)";
+                    document.body.style.background = "linear-gradient(to bottom right, #EC672B, #FFA07A)";
+                }
+
+              div.innerHTML = `
+                <h1 style="text-align: center; ">${data.location.name}</h1>
+                <p style="text-align: center; "> ${data.current.temp_c} C</p>
+                <img style="width: 200px; padding-left: 30%; " src="${data.current.condition.icon}" alt="">
+                <p style="text-align: center;   "> ${data.current.condition.text}</p>
+              `;
+
+
+              div.addEventListener('mouseover', () => {
+                div.innerHTML = `
+                <h1 style="text-align: center">Széladatok</h1>
+                <p style="text-align: center"> Szélsebesség:  ${data.current.wind_kph} km/h</p>
+                <p style="text-align: center"> Szélirány: ${data.current.wind_degree}°</p>
+                <p style="text-align: center"> Nedvesség: ${data.current.humidity}%</p>
+                <p style="text-align: center"> Felhözet: ${data.current.cloud}%</p>
+              `;
+              });
+              div.addEventListener('mouseout', () => {
+                div.innerHTML = `
+                <h1 style="text-align: center">${data.location.name}</h1>
+                <p style="text-align: center"> ${data.current.temp_c} C</p>
+                <img style="width: 200px; padding-left: 30%" src="${data.current.condition.icon}" alt="">
+                <p style="text-align: center"> ${data.current.condition.text}</p>
+              `;
+              });
+
+            })
+
+
+
+            .catch(err => console.error(err));
+        }  
+
+
+    </script>
+</body>
+</html>

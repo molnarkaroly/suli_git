@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÍM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+    <style>
+
+    </style>
+    <script>
+
+    </script>
+</head>
+<body id="top">
+
+
+    <h1>címsor 1</h1>
+    <h2>címsor 2</h2>
+    <h3>címsor 3</h3>
+    <h4>címsor 4</h4>
+    <h5>címsor 5</h5>
+    <h6>címsor 6</h6>
+    <a href="https://pysuli.hu">pysuli</a>
+    <p><span style="color: red;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum obcaecati, perferendis reprehenderit eos itaque saepe ut dolores, id a asperiores <br> culpa aperiam labore sunt autem, quasi odio magnam earum.</span><span>Laboriosam <mark> commodi ducimus aperiam ratione! Perspiciatis, nesciunt.</mark> Neque quam voluptate <em> earum aliquam dolores</em> iure aperiam obcaecati facilis animi. Placeat porro consequatur molestias tempore nisi et repudiandae eum, nostrum expedita nulla.</span><span>Fuga, debitis quidem itaque cupiditate consectetur exercitationem distinctio iusto sunt quis, magnam placeat vitae similique nemo mollitia numquam provident non voluptas, est ipsum neque<strong> doloribus <span class="green""> quaerat soluta</span> quo! Tempora,  facilis.</strong></span></p>
+
+    <hr>
+    
+    <!--ez egy komment ami csak itt jelenik meg de az oldalon nem-->
+<ol reversed start="2">
+        <li>ez egy rendezett lista</li>
+        <li value="5">ez egy rendezett lista</li>
+        <li>ez egy rendezett lista</li>
+        <li>ez egy rendezett lista</li>
+        <li>ez egy rendezett lista</li>
+</ol>
+
+<ul>
+    <li>nem rendezeett lista</li>
+    <li>nem rendezeett lista</li>
+    <li>nem rendezeett lista</li>
+    <li>nem rendezeett lista</li>
+    <li>nem rendezeett lista</li>
+</ul>
+
+<table>
+    <caption>Ez egy táblázat</caption>
+    <tr>
+        <th>a</th>
+        <th>b</th>
+        <th>c</th> 
+        <th>d</th>
+    </tr>
+    <tr>
+        <td colspan="2">e f</td> <!--oszlop összevobás-->
+                                <!--<td>f</td> - ki kell törölni-->
+        <td>g</td>
+        <td rowspan="2">h l</td>
+    </tr>
+    <tr>
+        <td>i</td>
+        <td>j</td>
+        <td>k</td>
+    </tr>
+    <tr>
+        <td>m</td>
+        <td colspan="2" rowspan="2">n o r s</td>
+        <td>p</td>
+    </tr>
+    <tr>
+        <td>q</td>
+        <td>t</td>
+    </tr>
+  <!-- <caption>Ez egy táblázat cím alul</caption>--> 
+</table>
+
+<img src="mosomedve.jpeg" alt="mosomedve" title="mosomedveee">
+
+<br>
+
+<p>&copy <sub>C</sub>opyrigh<sup>t</sup> &euro; </p>
+
+<q>Lenni vagy nem lenni</q>
+
+<blockquote>nem tudok idézetet ez egy idézet blok</blockquote>
+
+<p><abbr title="nem tudom de ennek meg kellene jelenni ez egy rövidites magyarazat">abbr</abbr></p>
+
+
+
+<hr>
+
+<pre>
+    ez az első sor
+      ez   a   második  sor  
+    ez  a harmadik          sor 
+ez van csak az elején
+ez ugy írja ahogy itt írva van
+
+╭━┳━╭━╭━╮╮
+┃┈┈┈┣▅╋▅┫┃
+┃┈┃┈╰━╰━━━━━━╮
+╰┳╯┈┈┈┈┈┈┈┈┈◢▉◣
+╲┃┈┈┈┈┈┈┈┈┈▉▉▉
+╲┃┈┈┈┈┈┈┈┈┈◥▉◤
+╲┃┈┈┈┈╭━┳━━━━╯
+╲┣━━━━━━┫
+</pre>
+<p>ez egy szöveg amit <del> törölni</del> <s> kell </s> </p>
+
+<meter min="10" max="100" value="45" title="statisztika vagy töltö bigyó scripptel"></meter>
+
+<figure>
+    <figcaption>Lista</figcaption>
+    <ul>
+        <li>matek</li>
+        <li>fizekka</li>
+        <li>ének</li>
+        <li>kémia</li>
+    </ul>   
+</figure>
+
+<a href="https://pysuli.hu" target="_blank" >Pysuli oldala</a>
+<br>
+<a href="mosomedve.jpeg">mosomedvekep</a>
+<br>
+<a href="#top">TOP</a>
+<br>
+<a href="mailto:molnarkaroly210@email.com">Email</a>
+
+<!--             get         -->
+<form action="mailto:molnar.karoly@diak.szbi-pg.hu" method="post"> <!-- value  /placeholder  megjelenítés:size     karakter max hosz: maxlength-->
+    <p> <label for="#"> Neve: <input type="text" name="nev" id="nev" placeholder="név" size="10" maxlength="15"></label></p>
+    <p> Jelszó:<input type="password" name="pass" id="" ></p>
+<fieldset>
+    <legend>Beszélt nyelvek:</legend>
+    <p> 
+    <label for=""><input type="checkbox" name="en" id="">angol</label>
+    <label for=""><input type="checkbox" name="hu" id="" checked>magyar</label>
+    <label for=""><input type="checkbox" name="de" id="">német</label>
+    <label for=""><input type="checkbox" name="it" id="">olasz</label>
+    </p>
+
+    
+</fieldset>
+
+
+
+<p> Valsz:
+    <label for=""><input type="radio" name="valasz" id="" checked>igen</label>
+    <label for=""><input type="radio" name="valasz" id="">nem</label>
+    <label for=""><input type="radio" name="valasz" id="">talán</label>
+    <!---amelyikeknek azozos a neve azok közül csak 1 választható ki-->
+</p>
+
+<p><label for="">Dátum:<input type="date" name="datum" id=""></label></p>
+
+<p><label for="">Hónap<input type="month" name="honap" id=""></label></p>
+
+<p><label for="">Hét:<input type="week" name="hét" id=""></label></p>
+
+<p><label for="">Idő:<input type="time" name="ido" id="" min="8:00" max="18:00" step="600"></label></p>
+
+<p><label for="">Mennyiség:<input type="range" name="mennyi" id="" min="100" max="500" value="200" step="50"></label></p>
+<p><label for="">Szám: <input type="number" name="szam" id="" min="20" max="150" value="30" step="5"></label></p>
+
+<p><label for="">Fájl:<input type="file" name="" id=""></label></p>
+
+<p><label for="">Színválasztó: <input type="color" name="szin" id=""></label></p>
+
+<p><label for=""><textarea name="" id="" cols="40" rows="10" placeholder="szürke eltűnő szöveg izé"></textarea></label></p>
+
+<p><input type="reset" value="töröl">
+   <input type="submit" value="Elküld">
+</p>
+
+<p>
+    <label for="">
+        <select name="gyumolcs" id="" multiple>Válasz egyet:
+            <option value="a">alma</option>
+            <option value="b" selected>barack</option>
+            <option value="c">citrom</option>
+            <option value="d">dinnye</option>
+
+        </select>
+    </label>
+</p>
+
+
+<button type="button">számol</button>
+</form>
+
+<div class="content">
+    <div class="news">
+        <img src="mosomedve.jpeg" alt="mosomaci" title="mososmedve" class="jobbra">
+       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, fuga molestias ex expedita provident eaque ad vel praesentium harum at quisquam adipisci officia sequi commodi est, reiciendis quam consequuntur quis.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, ea facilis incidunt cumque libero fugiat velit impedit! Ex dolore hic harum, dolorum quis modi esse laborum ea facere, officiis beatae.</p>
+    </div>
+
+    <div class="news">
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, reiciendis! Ab sunt veritatis similique iure inventore. Accusantium, quasi consequuntur mollitia perferendis laboriosam, dignissimos at dolor aut optio architecto animi voluptatibus.</p>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo deserunt tenetur sint cupiditate animi molestiae aut est blanditiis labore laudantium veniam non assumenda quibusdam alias rerum, beatae quae. Dolores, error?</p>
+    </div>
+
+    <div class="enter"> </div>
+
+
+    <div class="news2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex fuga velit expedita dicta facere hic veniam magni. Sequi voluptatibus dolores hic, voluptatem excepturi consectetur ab laborum vero atque sint.</p>
+    </div>
+    <div class="news2">
+        <p>Numquam est esse obcaecati cumque corporis dolorem praesentium perspiciatis dignissimos. Quaerat saepe sit quibusdam, quasi quas laboriosam! Dolorem rem tenetur, dolorum aut error eveniet impedit molestias ut eaque repellat soluta?</p>
+    </div>
+    <div class="news2">
+        <p>Aliquam dolorem doloribus modi cupiditate magnam, ipsum dignissimos. Suscipit nemo rem ea velit eaque quas consequatur odit totam atque porro, quae provident voluptas explicabo inventore officia voluptatum voluptatibus corporis odio?</p>
+    </div>
+    <div class="enter"> </div>
+
+
+</div>
+
+</body>
+</html>
