@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="update">
+    <name>Joomla module tutorial</name>
+    <version>1.0.2</version>
+    <author>Kiss Gábor</author>
+    <createDate>2025.03.26</createDate>
+    <description>Code used in the Joomla module tutorial</description>
+    <namespace path="src">KissGabor\Module\Hello</namespace>
+    <files>
+        <folder module="mod_hello">services</folder>
+        <folder>src</folder>
+    </files>
+</extension>
